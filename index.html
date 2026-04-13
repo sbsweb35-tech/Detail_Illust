@@ -1,403 +1,505 @@
 <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>일러스트레이터 핵심 참고서</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
-        <style>
-            /* 기본 폰트 설정 및 가독성 최적화 */
-            body {
-                font-family: 'Pretendard', sans-serif;
-                background-color: #f3f4f6;
-                color: #1f2937;
-                word-break: keep-all; /* 단어 단위로 줄바꿈 (한국어 가독성 향상) */
-            }
-            
-            /* 키보드 단축키 스타일 (눈에 띄고 직관적으로) */
-            kbd {
-                display: inline-block;
-                padding: 0.25rem 0.6rem;
-                font-size: 1.1rem;
-                font-weight: 700;
-                line-height: 1;
-                color: #1e3a8a;
-                background-color: #eff6ff;
-                border: 1px solid #bfdbfe;
-                border-bottom: 3px solid #93c5fd;
-                border-radius: 0.375rem;
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-                margin: 0 0.1rem;
-                font-family: monospace;
-            }
-
-            /* 컨텐츠 카드 스타일 */
-            .content-card {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-                padding: 2rem;
-                margin-bottom: 2rem;
-                border-top: 5px solid #2563eb; /* 카드 상단 포인트 색상 */
-            }
-
-            /* 부드러운 스크롤 */
-            html { scroll-behavior: smooth; }
-        </style>
-    </head>
-    <body class="antialiased text-lg leading-relaxed">
-
-        <!-- 상단 헤더 -->
-        <header class="bg-blue-800 text-white py-10 shadow-md sticky top-0 z-50">
-            <div class="max-w-4xl mx-auto px-6">
-                <h1 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight">🎨 일러스트레이터 핵심 참고서</h1>
-                <p class="text-blue-100 text-lg md:text-xl">강의 중 헷갈리는 기능과 단축키를 바로 확인하세요.</p>
-            </div>
-        </header>
-
-        <!-- 메인 컨텐츠 영역 -->
-        <main class="max-w-4xl mx-auto px-6 py-10">
-
-            <!-- 1. 환경 설정 -->
-            <section id="setting" class="content-card">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-gray-100 pb-3 mb-6 flex items-center">
-                    <span class="bg-blue-100 text-blue-800 p-2 rounded-lg mr-3 text-2xl">⚙️</span> 1. 기본 환경 설정
-                </h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-xl font-semibold text-blue-700 mb-2">환경 설정 창 열기: <kbd>Ctrl</kbd> + <kbd>K</kbd></h3>
-                        <ul class="list-disc list-inside space-y-3 pl-2 text-gray-700 text-lg md:text-xl">
-                            <li><strong class="text-gray-900">초기화:</strong> 환경 설정 창 하단의 <span class="bg-gray-100 px-2 py-1 rounded border">Reset Preferences</span> 클릭 &rarr; OK &rarr; 프로그램 재시작</li>
-                            <li><strong class="text-gray-900">시작 화면 끄기:</strong> General &rarr; <span class="bg-gray-100 px-2 py-1 rounded border">Show the Home Screen...</span> (체크 해제)</li>
-                            <li><strong class="text-gray-900">폰트 이름 한글로 보기:</strong> Type &rarr; <span class="bg-gray-100 px-2 py-1 rounded border">Show Font Names in English</span> (체크 해제)</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-gray-100">
-                        <h3 class="text-xl font-semibold text-blue-700 mb-2">작업 화면(패널) 초기화</h3>
-                        <p class="text-gray-700 text-lg md:text-xl pl-2">
-                            상단 메뉴바에서 <strong>Window</strong> &rarr; <strong>Workspace</strong> &rarr; <strong>Essentials Classic</strong> 선택<br>
-                            (패널이 꼬였을 때는 <strong>Reset Essentials Classic</strong>을 누르세요.)
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2. 필수 단축키 -->
-            <section id="shortcuts" class="content-card">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-gray-100 pb-3 mb-6 flex items-center">
-                    <span class="bg-green-100 text-green-800 p-2 rounded-lg mr-3 text-2xl">⌨️</span> 2. 화면 조작 및 필수 단축키
-                </h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">기본 도구</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center"><kbd class="w-10 text-center">V</kbd> <span class="ml-3 text-lg md:text-xl">선택 도구 (검은 화살표)</span></li>
-                            <li class="flex items-center"><kbd class="w-10 text-center">A</kbd> <span class="ml-3 text-lg md:text-xl">직접 선택 도구 (흰 화살표)</span></li>
-                            <li class="flex items-center"><kbd class="w-10 text-center">M</kbd> <span class="ml-3 text-lg md:text-xl">사각형 도구</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">화면 제어</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center"><kbd>Space</kbd> + 마우스 드래그 <span class="ml-3 text-lg md:text-xl">화면 이동</span></li>
-                            <li class="flex items-center"><kbd>Alt</kbd> + 마우스 휠 <span class="ml-3 text-lg md:text-xl">화면 확대 / 축소</span></li>
-                            <li class="flex items-center"><kbd>Ctrl</kbd> + <kbd>Y</kbd> <span class="ml-3 text-lg md:text-xl">윤곽선 모드 보기</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 md:col-span-2">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">파일 관리 및 되돌리기</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>N</kbd> <span class="ml-3 text-lg md:text-xl">새 문서 생성</span></div>
-                            <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>S</kbd> <span class="ml-3 text-lg md:text-xl">저장하기</span></div>
-                            <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>Z</kbd> <span class="ml-3 text-lg md:text-xl text-red-600 font-semibold">되돌리기 (실수했을 때)</span></div>
-                            <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> <span class="ml-3 text-lg md:text-xl">되돌린 것 다시 실행</span></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3. 핵심 기능 상세 -->
-            <section id="features" class="content-card">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-gray-100 pb-3 mb-6 flex items-center">
-                    <span class="bg-purple-100 text-purple-800 p-2 rounded-lg mr-3 text-2xl">🛠️</span> 3. 꼭 알아야 할 필수 기능
-                </h2>
-
-                <div class="space-y-8">
-                    <!-- 단위 / 붙여넣기 -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="border-l-4 border-purple-400 pl-4">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">줄자 켜기 / 단위 맞추기</h3>
-                            <p class="text-gray-700 text-lg mb-2"><kbd>Ctrl</kbd> + <kbd>R</kbd> 을 눌러 줄자를 켭니다.</p>
-                            <p class="text-gray-600 bg-gray-50 p-3 rounded text-base">줄자 위에서 마우스 우클릭 후, 만든 종이(대지)의 단위(예: mm, px)와 동일하게 설정하세요.</p>
-                        </div>
-                        <div class="border-l-4 border-purple-400 pl-4">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">제자리(바로 앞)에 복사하기</h3>
-                            <p class="text-gray-700 text-lg mb-2"><kbd>Ctrl</kbd> + <kbd>C</kbd> 후 <kbd>Ctrl</kbd> + <kbd>F</kbd></p>
-                            <p class="text-gray-600 bg-gray-50 p-3 rounded text-base">선택한 도형과 완벽히 똑같은 위치의 바로 앞에 복사본을 붙여넣습니다.</p>
-                        </div>
-                    </div>
-
-                    <hr class="border-gray-200">
-
-                    <!-- Move 기능 -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4 inline-block bg-purple-100 px-3 py-1 rounded">정확한 수치로 이동 및 복제 (Move)</h3>
-                        <p class="text-lg md:text-xl text-gray-700 mb-4">도형 선택 후 <kbd>V</kbd>(선택 도구) 상태에서 <kbd>Enter</kbd> 키를 누릅니다.</p>
-                        <div class="bg-gray-50 p-4 rounded-lg text-lg">
-                            <ul class="list-none space-y-2">
-                                <li><strong class="text-blue-700">Horizontal (가로):</strong> 양수는 오른쪽, 음수는 왼쪽으로 이동</li>
-                                <li><strong class="text-blue-700">Vertical (세로):</strong> 양수는 아래로, 음수는 위로 이동</li>
-                                <li><strong class="text-blue-700">Angle (각도):</strong> 가로/세로 값을 입력하면 각도 값이 자동으로 계산되어 대각선으로 이동합니다.</li>
-                            </ul>
-                            <div class="mt-4 flex flex-wrap gap-3">
-                                <span class="bg-white border px-3 py-1 rounded shadow-sm text-gray-700"><b>Preview:</b> 이동할 위치 미리보기</span>
-                                <span class="bg-white border px-3 py-1 rounded shadow-sm text-gray-700"><b>Copy:</b> 해당 위치로 복제</span>
-                                <span class="bg-white border px-3 py-1 rounded shadow-sm text-gray-700"><b>OK:</b> 그냥 이동</span>
-                            </div>
-                        </div>
-                        <p class="mt-4 text-lg md:text-xl font-bold text-red-600 flex items-center bg-red-50 p-3 rounded border border-red-100">
-                            <span class="mr-2">💡 꿀팁!</span> 방금 한 행동(이동/복제)을 반복하려면 <kbd>Ctrl</kbd> + <kbd>D</kbd> 를 누르세요.
-                        </p>
-                    </div>
-
-                    <hr class="border-gray-200">
-
-                    <!-- Transform (변형) -->
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">도형 변형 (Transform)</h3>
-                        <div class="flex flex-wrap gap-4 mb-3">
-                            <div class="bg-gray-50 px-4 py-2 rounded border"><kbd>S</kbd> 크기 조절 (Scale)</div>
-                            <div class="bg-gray-50 px-4 py-2 rounded border"><kbd>O</kbd> 반전/대칭 (Reflect)</div>
-                            <div class="bg-gray-50 px-4 py-2 rounded border"><kbd>R</kbd> 회전 (Rotate)</div>
-                        </div>
-                        <p class="text-lg text-gray-700 bg-yellow-50 p-3 rounded-lg border border-yellow-200">
-                            <strong>기준점 변경하기:</strong> 도구를 선택한 상태에서 <kbd>Alt</kbd> 키를 누른 채 화면의 다른 곳을 클릭하면, 그곳이 새로운 기준점이 되며 설정 창이 뜹니다.
-                        </p>
-                    </div>
-
-                    <hr class="border-gray-200">
-
-                    <!-- 스포이트 도구 -->
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
-                            스포이트 도구 (Eyedropper Tool) <kbd class="ml-3">I</kbd>
-                        </h3>
-                        <div class="bg-gray-50 p-5 rounded-lg text-lg space-y-4 border border-gray-200">
-                            <div>
-                                <strong class="text-blue-700 block mb-2 text-xl">▶ 기본 사용 방법</strong>
-                                <p class="flex items-center gap-2 flex-wrap">
-                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-base font-bold whitespace-nowrap">1단계</span> 색상을 <strong>넣어줄</strong> 도형 선택
-                                    <span class="text-gray-400">➔</span> 
-                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-base font-bold whitespace-nowrap">2단계</span> 스포이트로 색상을 <strong>훔쳐올</strong> 도형 클릭
-                                </p>
-                                <p class="text-base text-gray-600 mt-2 pl-2 border-l-4 border-gray-300">
-                                    * 기본 클릭 시 <strong>면색과 선의 속성(두께, 색상 등)</strong>을 모두 가져옵니다.
-                                </p>
-                            </div>
-                            <ul class="list-none space-y-3 pt-4 border-t border-gray-200">
-                                <li>
-                                    <span class="inline-block w-[130px] font-bold"><kbd>Alt</kbd> + 클릭</span> 
-                                    반대로 적용! (색상을 훔쳐올 도형 선택 후, <kbd>Alt</kbd> 누르고 넣어줄 도형 클릭)
-                                </li>
-                                <li>
-                                    <span class="inline-block w-[130px] font-bold"><kbd>Shift</kbd> + 클릭</span> 
-                                    선 두께 등의 속성은 무시하고 오직 <strong>색상만</strong> 가져옵니다.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 4. 고급 활용 -->
-            <section id="advanced" class="content-card">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-gray-100 pb-3 mb-6 flex items-center">
-                    <span class="bg-orange-100 text-orange-800 p-2 rounded-lg mr-3 text-2xl">✨</span> 4. 마법 같은 고급 기능
-                </h2>
-
-                <div class="space-y-8">
-                    
-                    <!-- Shape Builder -->
-                    <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
-                            도형 구성 도구 (Shape Builder) <kbd class="ml-3 text-lg">Shift</kbd> + <kbd class="text-lg">M</kbd>
-                        </h3>
-                        <p class="text-lg md:text-xl text-gray-700 mb-3">도형을 쉽게 분리, 합치거나 자를 수 있습니다.</p>
-                        <ol class="list-decimal list-inside space-y-3 text-lg text-gray-800 ml-2">
-                            <li>합치거나 자를 도형들을 <strong>모두 선택</strong>합니다.</li>
-                            <li>단축키 <kbd>Shift</kbd> + <kbd>M</kbd> 을 누릅니다.</li>
-                            <li class="bg-white p-2 rounded border border-gray-100"><strong class="text-blue-700">클릭:</strong> 교차된 면을 각각 분리합니다.</li>
-                            <li class="bg-white p-2 rounded border border-gray-100"><strong class="text-blue-700">클릭 + 드래그:</strong> 훑고 지나간 도형들을 하나로 합칩니다.</li>
-                            <li class="bg-red-50 p-2 rounded border border-red-100"><strong class="text-red-600">Alt + 클릭 / 드래그:</strong> 원치 않는 부분을 지우거나 뺍니다.</li>
-                        </ol>
-                    </div>
-
-                    <!-- Group vs Compound Path -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="border border-blue-200 p-4 rounded-lg bg-blue-50">
-                            <h4 class="text-xl font-bold text-blue-900 mb-2">그룹 (Group)</h4>
-                            <p class="text-gray-700 text-lg">여러 개의 도형을 <strong class="text-blue-700">한 묶음처럼</strong> 취급합니다. (언제든 다시 풀 수 있음)</p>
-                            <p class="mt-2"><kbd>Ctrl</kbd> + <kbd>G</kbd></p>
-                        </div>
-                        <div class="border border-red-200 p-4 rounded-lg bg-red-50">
-                            <h4 class="text-xl font-bold text-red-900 mb-2">컴파운드 패스 (Compound Path)</h4>
-                            <p class="text-gray-700 text-lg">여러 개의 도형을 물리적으로 <strong class="text-red-700">완전한 하나의 도형처럼</strong> 취급합니다.</p>
-                            <p class="mt-2"><kbd>Ctrl</kbd> + <kbd>8</kbd></p>
-                        </div>
-                    </div>
-
-                    <!-- Opacity Mask -->
-                    <div class="bg-gray-800 text-white p-6 rounded-lg shadow-inner">
-                        <h3 class="text-2xl font-bold text-yellow-300 mb-3">불투명도 마스크 (Opacity Mask)</h3>
-                        <p class="text-lg md:text-xl mb-4 text-gray-200">무채색(그라디언트 등) 도형을 위에 얹어, 아래 도형을 자연스럽게 가리거나 보이게 하는 기능입니다.</p>
-                        <div class="bg-gray-700 p-4 rounded text-lg mb-4">
-                            <p class="mb-2">1. 적용할 도형들을 모두 선택합니다. (위에 덮은 무채색 도형 + 아래 그림)</p>
-                            <p>2. 투명도(Transparency) 패널에서 <strong>Make Mask</strong> 버튼을 누릅니다.</p>
-                        </div>
-                        <ul class="flex space-x-6 text-xl">
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-black border border-gray-500 rounded-full inline-block mr-2"></span>
-                                <span><strong>검정색:</strong> 이미지를 가립니다.</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-6 h-6 bg-white border border-gray-500 rounded-full inline-block mr-2"></span>
-                                <span><strong>흰색:</strong> 이미지를 보여줍니다.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- 5. 폰트(글꼴) 사용 가이드 -->
-            <section id="fonts" class="content-card">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-gray-100 pb-3 mb-6 flex items-center">
-                    <span class="bg-teal-100 text-teal-800 p-2 rounded-lg mr-3 text-2xl">📝</span> 5. 폰트(글꼴) 실무 사용 가이드
-                </h2>
-
-                <div class="space-y-8">
-                    
-                    <!-- 상업적 무료 폰트 -->
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3 border-l-4 border-teal-500 pl-3">상업적 이용 가능한 무료 폰트</h3>
-                        <p class="text-gray-600 mb-3 text-lg">상세페이지, 배너, 카드뉴스, 포트폴리오 등에는 반드시 상업적 이용이 허락된 무료 폰트를 사용하세요.</p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <div class="flex-1 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                <span class="font-bold text-xl block mb-1">🇰🇷 한글 폰트</span>
-                                <a href="https://noonnu.cc/" target="_blank" class="text-blue-600 hover:underline font-bold text-lg">눈누 (Noonnu)</a>
-                            </div>
-                            <div class="flex-1 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                <span class="font-bold text-xl block mb-1">🔤 영문(외국어) 폰트</span>
-                                <a href="https://fonts.google.com/" target="_blank" class="text-blue-600 hover:underline font-bold text-lg">구글 폰트 (Google Fonts)</a>
-                            </div>
-                        </div>
-                        <p class="mt-2 text-base text-red-600 font-semibold">* 주의: '다폰트(Dafont)' 등의 사이트는 개인용 무료가 많으므로 라이선스 확인에 각별히 유의해야 합니다.</p>
-                    </div>
-
-                    <!-- 폰트 종류 -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- 가독성 -->
-                        <div class="border border-gray-200 p-5 rounded-lg bg-white shadow-sm">
-                            <h4 class="text-xl font-bold text-gray-900 mb-3 bg-teal-50 inline-block px-2 py-1 rounded">가독성이 중요한 본문</h4>
-                            <p class="text-gray-700 mb-2">굵기(Weight)가 다양한 폰트 패밀리를 추천합니다.</p>
-                            <ul class="list-disc list-inside space-y-1 text-gray-800">
-                                <li><strong class="text-blue-700">웹(화면)용:</strong> 고딕 계열 (산세리프) 추천</li>
-                                <li><strong class="text-blue-700">인쇄물용:</strong> 명조 계열 (세리프) 추천</li>
-                            </ul>
-                            <div class="mt-4 pt-4 border-t border-gray-100">
-                                <h5 class="font-bold text-gray-600 mb-2">[추천 한글 폰트]</h5>
-                                <ul class="text-gray-700 text-base space-y-1">
-                                    <li><strong>고딕:</strong> Noto Sans KR(구글), Pretendard(눈누), Wanted Sans(눈누)</li>
-                                    <li><strong>명조:</strong> 부크크 명조, 리디 바탕, 고운 바탕 (모두 눈누)</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- 꾸미기 -->
-                        <div class="border border-gray-200 p-5 rounded-lg bg-white shadow-sm">
-                            <h4 class="text-xl font-bold text-gray-900 mb-3 bg-pink-50 inline-block px-2 py-1 rounded">꾸미기 & 타이틀</h4>
-                            <p class="text-gray-700 mb-2">분위기와 목적에 맞는 개성 있는 폰트를 선택하세요.</p>
-                            <ul class="space-y-4 text-gray-800 mt-4">
-                                <li class="bg-gray-50 p-3 rounded text-base">
-                                    <strong class="text-lg">감성적인 디자인:</strong><br>
-                                    장평이 세로로 긴 폰트나 부드러운 명조(세리프) 추천
-                                </li>
-                                <li class="bg-gray-50 p-3 rounded text-base">
-                                    <strong class="text-lg">활동적이고 통통 튀는 디자인:</strong><br>
-                                    장평이 가로로 넓고 세로로 짧은 폰트 추천
-                                </li>
-                            </ul>
-                            <div class="mt-4 pt-4 border-t border-gray-100">
-                                <h5 class="font-bold text-gray-600 mb-2">[포인트 + 본문용 추천]</h5>
-                                <p class="text-gray-700 text-base">페이퍼로지, 에이투지체 (눈누)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 폰트 설정 (장평, 자간, 행간) -->
-                    <div class="bg-blue-50 border border-blue-200 p-5 rounded-lg">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center">📐 실무 폰트 설정 공식</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <span class="block text-gray-500 text-sm mb-1">글자 가로/세로 비율</span>
-                                <strong class="text-xl text-gray-900">장평</strong>
-                                <p class="text-red-600 font-bold mt-2">건들지 말기 (100%)</p>
-                            </div>
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <span class="block text-gray-500 text-sm mb-1">글자 사이 간격</span>
-                                <strong class="text-xl text-gray-900">자간</strong>
-                                <p class="text-blue-600 font-bold mt-2">음수값 (-25 ~ -50 등)</p>
-                            </div>
-                            <div class="bg-white p-4 rounded shadow-sm">
-                                <span class="block text-gray-500 text-sm mb-1">줄 사이 간격</span>
-                                <strong class="text-xl text-gray-900">행간</strong>
-                                <p class="text-blue-600 font-bold mt-2">폰트 사이즈 × 1.2~1.6배</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TTF / OTF -->
-                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <div class="flex-1 border-l-4 border-yellow-400 pl-4 py-2">
-                            <h4 class="font-bold text-lg text-gray-900">TTF <span class="text-sm font-normal text-gray-600">(TrueType Font)</span></h4>
-                            <p class="text-gray-700">일반 문서 작업 (워드, 엑셀, PPT 등)</p>
-                            <p class="text-sm bg-gray-100 inline-block px-2 py-1 rounded mt-1">주로 <strong>Windows OS</strong>에서 사용</p>
-                        </div>
-                        <div class="flex-1 border-l-4 border-green-400 pl-4 py-2">
-                            <h4 class="font-bold text-lg text-gray-900">OTF <span class="text-sm font-normal text-gray-600">(OpenType Font)</span></h4>
-                            <p class="text-gray-700">그래픽 작업 (일러스트, 포토샵 등)</p>
-                            <p class="text-sm bg-gray-100 inline-block px-2 py-1 rounded mt-1">주로 <strong>Mac OS</strong>에서 사용 (고해상도)</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
-
-        <!-- 맨 위로 가기 버튼 -->
-        <button id="scrollTopBtn" onclick="window.scrollTo(0,0)" class="fixed bottom-8 right-8 bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-blue-700 transition-colors opacity-0 invisible duration-300 z-50">
-            &uarr;
-        </button>
-
-        <script>
-            // 스크롤 시 '맨 위로 가기' 버튼 표시
-            const scrollTopBtn = document.getElementById('scrollTopBtn');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    scrollTopBtn.classList.remove('opacity-0', 'invisible');
-                    scrollTopBtn.classList.add('opacity-100', 'visible');
-                } else {
-                    scrollTopBtn.classList.add('opacity-0', 'invisible');
-                    scrollTopBtn.classList.remove('opacity-100', 'visible');
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일러스트레이터 핵심 참고서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        krds: {
+                            primary: '#246BFF',   /* KRDS 메인 블루 */
+                            dark: '#111111',      /* 기본 텍스트 */
+                            gray: '#555555',      /* 보조 텍스트 */
+                            light: '#F5F6F8',     /* 배경색 */
+                            border: '#E5E5E5',    /* 기본 테두리 */
+                            box: '#F8F9FA'        /* 박스 배경색 */
+                        }
+                    }
                 }
-            });
-        </script>
-    </body>
-    </html>
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 폰트 및 KRDS 기본 설정 */
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F5F6F8;
+            color: #111111;
+            word-break: keep-all;
+            line-height: 1.6;
+        }
+        
+        /* 단축키 스타일 (KRDS 스타일로 깔끔하고 명확하게 변경) */
+        kbd {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #222;
+            background-color: #ffffff;
+            border: 1px solid #cdd0d4;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            margin: 0 0.1rem;
+            font-family: monospace;
+        }
+
+        /* 컨텐츠 카드 */
+        .krds-card {
+            background-color: #ffffff;
+            border: 1px solid #E5E5E5;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        /* KRDS 메인 섹션 타이틀 */
+        .krds-sec-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #111111;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #111111;
+        }
+
+        /* KRDS 서브 타이틀 (좌측 포인트 라인) */
+        .krds-sub-title {
+            position: relative;
+            padding-left: 0.875rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .krds-sub-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 18px;
+            background-color: #246BFF;
+            border-radius: 2px;
+        }
+        .krds-sub-title:first-child { margin-top: 0; }
+
+        /* KRDS 정보성 박스 */
+        .krds-box {
+            background-color: #F8F9FA;
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .krds-box-info {
+            background-color: #F3F7FF;
+            border: 1px solid #D1E0FF;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .krds-box-alert {
+            background-color: #FFF5F5;
+            border: 1px solid #FFE0E0;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        /* 기본 리스트 스타일 */
+        .krds-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .krds-list > li {
+            position: relative;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            color: #555555;
+        }
+        .krds-list > li::before {
+            content: '·';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased text-base">
+
+    <!-- 상단 헤더 (KRDS 스타일: 화이트 배경, 뚜렷한 하단 보더) -->
+    <header class="bg-white border-b border-krds-border py-8 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-krds-dark mb-2 tracking-tight">일러스트레이터 핵심 참고서</h1>
+                <p class="text-krds-gray text-lg">강의 중 헷갈리는 기능과 실전 로고 제작법 가이드</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <span class="inline-block bg-krds-primary text-white text-sm font-bold px-3 py-1 rounded-full">V 1.0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- 1. 환경 설정 -->
+        <section id="setting" class="krds-card">
+            <h2 class="krds-sec-title">1. 기본 환경 설정 (작업 전 필수)</h2>
+            
+            <h3 class="krds-sub-title">환경 설정 창 열기 <span class="ml-2"><kbd>Ctrl</kbd> + <kbd>K</kbd></span></h3>
+            <ul class="krds-list text-lg">
+                <li><strong class="text-krds-dark">초기화:</strong> 하단의 [Reset Preferences] 클릭 &rarr; OK &rarr; 재시작 <span class="text-base text-krds-gray">(작업 이력만 지워지고 파일은 안전합니다)</span></li>
+                <li><strong class="text-krds-dark">시작 화면 끄기:</strong> General &rarr; [Show the Home Screen...] 체크 해제</li>
+                <li><strong class="text-krds-dark">폰트 이름 한글로 보기:</strong> Type &rarr; [Show Font Names in English] 체크 해제</li>
+            </ul>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div class="krds-box-info">
+                    <strong class="text-krds-primary block mb-1">눈 피로도 감소</strong>
+                    <p class="text-krds-gray">User Interface &rarr; Brightness를 <strong>어두운 테마</strong>로 설정</p>
+                </div>
+                <div class="krds-box-alert">
+                    <strong class="text-red-600 block mb-1">자동 저장 (매우 중요)</strong>
+                    <p class="text-krds-gray">File Handling &rarr; Automatically Save... 체크 후 <strong>1~2분 간격</strong>으로 설정</p>
+                </div>
+            </div>
+
+            <h3 class="krds-sub-title">작업 화면(패널) 및 툴바 정리</h3>
+            <ul class="krds-list text-lg">
+                <li>상단 <strong>Window</strong> &rarr; <strong>Workspace</strong> &rarr; <strong>Essentials Classic</strong> 선택<br>
+                    <span class="text-base text-krds-gray">(패널이 꼬였을 때는 <strong>Reset Essentials Classic</strong> 클릭)</span>
+                </li>
+                <li>선택할 때마다 뜨는 성가신 바 끄기: 상단 <strong>Window</strong> &rarr; <strong>Contextual Task Bar</strong> 체크 해제</li>
+            </ul>
+        </section>
+
+        <!-- 2. 단축키 및 문서 설정 -->
+        <section id="shortcuts" class="krds-card">
+            <h2 class="krds-sec-title">2. 화면 조작 및 새 문서 설정</h2>
+            
+            <div class="krds-box border-krds-dark border-2 mb-8">
+                <h3 class="text-xl font-bold text-krds-dark mb-3 flex items-center">새 문서 만들기 <kbd class="ml-3">Ctrl</kbd> + <kbd>N</kbd></h3>
+                <div class="text-lg space-y-2 text-krds-gray">
+                    <p class="text-red-600 font-bold mb-2">※ 주의: 크기 숫자를 적기 전에 반드시 '단위(mm)'부터 맞추세요!</p>
+                    <ul class="krds-list">
+                        <li><strong>크기:</strong> 500 x 500 mm (정사각형 로고 기준)</li>
+                        <li><strong>컬러 모드:</strong> 웹(모니터)용은 <strong>RGB</strong> / 인쇄용은 <strong>CMYK</strong></li>
+                        <li><strong>해상도(Raster Effects):</strong> 웹/일반 작업은 <strong>72ppi</strong> (크면 컴퓨터가 느려집니다)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <!-- 기본 도구 -->
+                <div>
+                    <h3 class="krds-sub-title mt-0">기본 선택 / 그리기</h3>
+                    <ul class="space-y-3 text-lg text-krds-dark">
+                        <li class="flex items-center"><kbd class="w-10 text-center">V</kbd> <span class="ml-3">선택 도구 (검은 화살표)</span></li>
+                        <li class="flex items-center"><kbd class="w-10 text-center">A</kbd> <span class="ml-3">직접 선택 (점 수정 / 흰 화살표)</span></li>
+                        <li class="flex items-center"><kbd class="w-10 text-center">M</kbd> <span class="ml-3">사각형 도구</span></li>
+                        <li class="flex items-center"><kbd class="w-10 text-center">L</kbd> <span class="ml-3 text-krds-primary font-bold">원형 도구</span></li>
+                    </ul>
+                </div>
+
+                <!-- 화면 제어 & 컬러 -->
+                <div>
+                    <h3 class="krds-sub-title mt-0">화면 제어 / 색상 도구</h3>
+                    <ul class="space-y-3 text-lg text-krds-dark">
+                        <li class="flex items-center"><kbd>Space</kbd> + 드래그 <span class="ml-3">화면 이동</span></li>
+                        <li class="flex items-center"><kbd>Alt</kbd> + 휠 <span class="ml-3">화면 확대 / 축소</span></li>
+                        <li class="flex items-center mt-4 border-t border-krds-border pt-3"><kbd class="w-10 text-center">D</kbd> <span class="ml-3">기본 색상 (흰 면, 검은 선)</span></li>
+                        <li class="flex items-center"><kbd class="w-10 text-center">/</kbd> <span class="ml-3">색상 채우기 없음 (투명)</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-center gap-6 bg-krds-light p-4 rounded-lg border border-krds-border">
+                <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>S</kbd> <span class="ml-2 font-bold text-krds-dark">저장</span></div>
+                <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>Z</kbd> <span class="ml-2 font-bold text-red-600">되돌리기</span></div>
+                <div class="flex items-center"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> <span class="ml-2 font-bold text-krds-dark">다시 실행</span></div>
+            </div>
+        </section>
+
+        <!-- 3. 핵심 기능 상세 -->
+        <section id="features" class="krds-card">
+            <h2 class="krds-sec-title">3. 로고 제작에 꼭 필요한 기능</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="krds-sub-title mt-0">실무 컬러 패널 세팅 (HSB)</h3>
+                    <p class="text-krds-gray text-base mb-2">Color 패널을 꺼내 Properties 위에 얹으세요.</p>
+                    <div class="krds-box">
+                        <p class="text-krds-dark">패널 우측 상단 줄 3개(≡) 클릭 &rarr; <strong>HSB</strong> 선택<br>
+                        <span class="text-krds-gray text-sm">(색상, 채도, 명도로 조절하여 색 맞추기가 훨씬 쉽습니다)</span></p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="krds-sub-title mt-0">모양 굳히기 (Expand)</h3>
+                    <p class="text-krds-gray text-base mb-2">비율을 조절한 도형의 현재 상태를 완전히 굳힙니다.</p>
+                    <div class="krds-box">
+                        <p class="text-krds-dark font-bold">Object &rarr; Expand</p>
+                        <p class="text-red-600 text-sm mt-1">※ 주의: 선(Stroke) 색상은 없애고 진행하세요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="krds-sub-title">정확한 수치로 이동 및 복제 (Move)</h3>
+            <div class="krds-box mb-6">
+                <p class="text-lg text-krds-dark mb-4">도형 선택 후 <kbd>V</kbd>(선택 도구) 상태에서 <kbd>Enter</kbd> 키를 누릅니다.</p>
+                <ul class="krds-list mb-4">
+                    <li><strong class="text-krds-primary w-32 inline-block">Horizontal:</strong> 가로 이동 (오른쪽 양수, 왼쪽 음수)</li>
+                    <li><strong class="text-krds-primary w-32 inline-block">Vertical:</strong> 세로 이동 (아래쪽 양수, 위쪽 음수)</li>
+                </ul>
+                <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-krds-border">
+                    <span class="bg-white border border-krds-border px-3 py-1 rounded text-sm text-krds-dark"><b>Preview</b> 미리보기</span>
+                    <span class="bg-krds-primary text-white px-3 py-1 rounded text-sm font-bold"><b>Copy</b> 복제</span>
+                    <span class="bg-gray-800 text-white px-3 py-1 rounded text-sm"><kbd class="border-none bg-transparent text-white p-0 shadow-none">Ctrl</kbd> + <kbd class="border-none bg-transparent text-white p-0 shadow-none">D</kbd> 방금 한 행동 반복</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="krds-sub-title mt-0">도형 변형 (Transform)</h3>
+                    <div class="flex flex-col gap-2 mb-3 text-krds-dark">
+                        <div class="krds-box py-2 px-4"><kbd>S</kbd> 크기 조절 (Scale) <span class="text-sm text-krds-gray ml-2">비율 무시는 Non-Uniform</span></div>
+                        <div class="krds-box py-2 px-4"><kbd>O</kbd> 반전/대칭 (Reflect)</div>
+                        <div class="krds-box py-2 px-4"><kbd>R</kbd> 회전 (Rotate)</div>
+                    </div>
+                    <p class="text-sm text-krds-gray">
+                        <strong>기준점 변경:</strong> 도구 선택 상태에서 <kbd>Alt</kbd> + 화면 클릭
+                    </p>
+                </div>
+                <div>
+                    <h3 class="krds-sub-title mt-0">일정한 크기로 확대/축소 (Offset Path)</h3>
+                    <p class="text-krds-gray mb-3">원의 반지름 등을 기준으로 정확히 커지거나 작아집니다.</p>
+                    <div class="krds-box bg-gray-800 text-white border-none">
+                        <p class="mb-2 font-bold text-krds-primary text-blue-300">Object &rarr; Path &rarr; Offset Path</p>
+                        <p class="text-sm text-gray-300">예) 지름 40mm(반지름 20mm) 원에 Offset 값 '-10mm'를 주면 반지름 10mm인 작은 원이 생성됩니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="krds-sub-title">스포이트 도구 (Eyedropper) <span class="ml-2"><kbd>I</kbd></span></h3>
+            <div class="krds-box">
+                <p class="mb-3 font-bold text-krds-dark">색상 <span class="text-krds-primary">넣어줄</span> 도형 선택 후 &rarr; 스포이트로 <span class="text-krds-primary">훔쳐올</span> 도형 클릭</p>
+                <ul class="krds-list text-krds-dark">
+                    <li><strong>클릭:</strong> 면색 + 선 속성 모두 가져옴</li>
+                    <li><strong>Alt + 클릭:</strong> 반대로 적용 (색을 뿜어냄)</li>
+                    <li><strong>Shift + 클릭:</strong> 선 두께 무시, 오직 <strong>색상만</strong> 가져옴</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. 고급 활용 -->
+        <section id="advanced" class="krds-card">
+            <h2 class="krds-sec-title">4. 고급 도형 제어</h2>
+            
+            <h3 class="krds-sub-title mt-0">도형 자르고 합치기 (Shape Builder) <span class="ml-2"><kbd>Shift</kbd> + <kbd>M</kbd></span></h3>
+            <div class="krds-box mb-8">
+                <p class="text-krds-primary font-bold mb-4">※ 작업할 도형들을 '모두 선택'하는 것이 1순위입니다!</p>
+                <ol class="list-decimal list-inside space-y-2 text-krds-dark mb-4">
+                    <li><strong>분리:</strong> 그냥 클릭</li>
+                    <li><strong>합치기:</strong> 훑듯이 클릭 + 드래그</li>
+                    <li class="text-red-600"><strong>지우기(빼기):</strong> <kbd>Alt</kbd> 누른 상태로 클릭 / 드래그</li>
+                </ol>
+                <p class="text-sm text-krds-gray pt-3 border-t border-krds-border">작업 위치를 정확히 보려면 <kbd>Ctrl</kbd> + <kbd>Y</kbd> (윤곽선 모드)를 켜서 모서리를 맞추세요.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div class="krds-box border-l-4 border-l-krds-primary">
+                    <h4 class="text-lg font-bold text-krds-dark mb-1">단순 묶기: 그룹 (Group)</h4>
+                    <p class="text-krds-gray text-sm mb-3">도형을 한 묶음처럼 취급. 각각의 개체는 살아있습니다.</p>
+                    <kbd>Ctrl</kbd> + <kbd>G</kbd>
+                </div>
+                <div class="krds-box border-l-4 border-l-gray-800">
+                    <h4 class="text-lg font-bold text-krds-dark mb-1">물리적 결합: 컴파운드 패스</h4>
+                    <p class="text-krds-gray text-sm mb-3">여러 도형을 완전한 하나의 도형처럼 취급. (그라디언트 필수)</p>
+                    <kbd>Ctrl</kbd> + <kbd>8</kbd>
+                </div>
+            </div>
+
+            <h3 class="krds-sub-title">자연스러운 그림자/빗반사 만드는 2가지 비법</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 방법 1 -->
+                <div class="border border-krds-border rounded-lg p-5">
+                    <h4 class="font-bold text-lg text-krds-dark mb-3">방법 1. 그라디언트(Gradient) 그림자</h4>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-krds-gray">
+                        <li>여러 개체라면 반드시 <kbd>Ctrl</kbd>+<kbd>8</kbd> (컴파운드 패스) 적용</li>
+                        <li><kbd>G</kbd> 누르고 <kbd>Enter</kbd> (그라디언트 90도 선형 적용)</li>
+                        <li class="text-krds-primary font-bold">양쪽 색상을 원본 도형과 동일하게 맞춥니다. (어색한 검정/흰색 X)</li>
+                        <li>사라질 쪽 컬러를 선택하고 <strong>Opacity(투명도) 0%</strong> 적용</li>
+                        <li>도형 전체 투명도를 40~60%로 낮춥니다.</li>
+                    </ol>
+                </div>
+
+                <!-- 방법 2 -->
+                <div class="border border-gray-800 bg-gray-800 rounded-lg p-5">
+                    <h4 class="font-bold text-lg text-white mb-3">방법 2. 오퍼시티 마스크 빗반사</h4>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-300">
+                        <li>원본 복사본 위에 '흰색~검정' 그라디언트 사각형 덮기</li>
+                        <li>둘 다 선택 후 <strong>Transparency 패널 &rarr; Make Mask</strong></li>
+                        <li>마스크 썸네일(오른쪽) 클릭 후 <kbd>G</kbd> 눌러 방향 조절</li>
+                        <li class="text-blue-300 font-bold">완전한 투명을 위해 검정색 코드를 #000000으로 맞춥니다.</li>
+                        <li>썸네일 왼쪽(원본) 클릭 후 도형 전체 투명도 40~60% 조절</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 실전 예제 -->
+        <section id="recipe" class="krds-card">
+            <h2 class="krds-sec-title">5. 실전 예제: 로고 제작 레시피</h2>
+
+            <div class="mb-10">
+                <h3 class="krds-sub-title mt-0 text-xl">변호사 로펌 로고 (신뢰감 컨셉)</h3>
+                <p class="text-krds-gray mb-4"><strong>추천 컬러:</strong> 남색, 청록색, 차분한 고동색 등 신뢰감을 주는 색상</p>
+                <div class="krds-box space-y-3 text-krds-dark">
+                    <p><strong>1. 기본 기둥 세우기:</strong> 사각형(M) 5x43mm 생성 &rarr; HSB 패널로 남색 적용</p>
+                    <p><strong>2. 복사하기:</strong> <kbd>V</kbd> + <kbd>Enter</kbd> (가로 7.5mm / 세로 0) Copy 클릭 &rarr; <kbd>Ctrl</kbd> + <kbd>D</kbd> 로 3개 완성</p>
+                    <p class="pt-3 border-t border-krds-border">
+                        <strong>3. 사선으로 자르기:</strong> 35x35mm 정사각형 생성 &rarr; 45도 회전 &rarr; <kbd>S</kbd> + <kbd>Enter</kbd> (세로 60% 납작하게) &rarr; 
+                        <span class="text-krds-primary font-bold">Object > Expand 굳히기</span> &rarr; <kbd>Ctrl</kbd>+<kbd>Y</kbd> (윤곽선 모드)로 모서리 맞추기 &rarr; 
+                        <kbd>Shift</kbd>+<kbd>M</kbd> 누르고 <kbd>Alt</kbd>+드래그하여 튀어나온 부분 삭제.
+                    </p>
+                    <p class="pt-3 border-t border-krds-border">
+                        <strong>4. 그룹 후 반전(대칭):</strong> 세 개 도형 잡고 <kbd>Ctrl</kbd>+<kbd>G</kbd> &rarr; <kbd>O</kbd>(반전) 누르고 우측 앵커포인트에 <kbd>Alt</kbd>+클릭 &rarr; Vertical(세로) Copy 클릭.
+                    </p>
+                    <p><strong>5. 톤 맞추기:</strong> 반전된 도형은 HSB 패널에서 <strong>S(채도)는 낮추고 B(명도)는 높여</strong> 파스텔 톤으로 변경.</p>
+                    <p><strong>6. 그림자 마감:</strong> 상하 반전 &rarr; 도형 합치기 &rarr; <strong>컴파운드 패스(<kbd>Ctrl</kbd>+<kbd>8</kbd>)</strong> &rarr; 그라디언트 그림자 적용.</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="krds-sub-title text-xl">태극 로고 (공공기관, 자격증 단골)</h3>
+                <div class="krds-box space-y-3 text-krds-dark">
+                    <p><strong>1. 기본 원 생성:</strong> 원형 도구(L) 40x40mm 생성 &rarr; 기본색(D) 적용 &rarr; 면색 제거(/)</p>
+                    <p>
+                        <strong>2. 정확한 절반 크기 원 만들기:</strong> 원 선택 &rarr; 
+                        <strong class="text-krds-primary">Object > Path > Offset Path (값: -10mm)</strong> 입력.
+                        <br><span class="text-sm text-krds-gray">(지름 40mm의 반지름은 20mm. -10mm를 주면 반지름 10mm인 정확한 반쪽짜리 원이 생깁니다.)</span>
+                    </p>
+                    <p>
+                        <strong>3. 정렬 및 복사:</strong> 큰 원, 작은 원 모두 선택 &rarr; Align(정렬) 패널 <strong>'왼쪽 정렬'</strong> &rarr; 
+                        작은 원 복사 (<kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>F</kbd> 제자리 붙여넣기)
+                    </p>
+                    <p><strong>4. 우측 정렬:</strong> 큰 원과 방금 복사한 작은 원을 같이 선택 &rarr; Align 패널 <strong>'오른쪽 정렬'</strong></p>
+                    <p class="text-red-600 font-bold mt-2">※ 눈대중으로 맞추면 안 됩니다! 반드시 Offset Path와 Align 패널을 사용하세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 폰트(글꼴) 사용 가이드 -->
+        <section id="fonts" class="krds-card mb-0">
+            <h2 class="krds-sec-title">6. 폰트(글꼴) 실무 사용 가이드</h2>
+
+            <h3 class="krds-sub-title mt-0">상업적 이용 가능한 무료 폰트</h3>
+            <p class="text-krds-gray mb-4">상세페이지, 배너, 포트폴리오 등에는 반드시 상업적 무료 폰트를 사용하세요.</p>
+            <div class="flex flex-col sm:flex-row gap-4 mb-3">
+                <div class="flex-1 krds-box border-t-4 border-t-krds-dark text-center">
+                    <span class="block text-sm text-krds-gray mb-1">한글 폰트</span>
+                    <a href="https://noonnu.cc/" target="_blank" class="text-krds-dark hover:text-krds-primary font-bold text-lg underline underline-offset-4">눈누 (Noonnu)</a>
+                </div>
+                <div class="flex-1 krds-box border-t-4 border-t-krds-dark text-center">
+                    <span class="block text-sm text-krds-gray mb-1">영문 폰트</span>
+                    <a href="https://fonts.google.com/" target="_blank" class="text-krds-dark hover:text-krds-primary font-bold text-lg underline underline-offset-4">구글 폰트 (Google Fonts)</a>
+                </div>
+            </div>
+            <p class="text-sm text-red-600 font-bold mb-8">※ 주의: '다폰트(Dafont)' 등의 사이트는 개인용 무료가 많으므로 라이선스 확인에 각별히 유의해야 합니다.</p>
+
+            <h3 class="krds-sub-title">실무 폰트 설정 공식</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mb-8">
+                <div class="border border-krds-border p-4 rounded-lg">
+                    <span class="block text-krds-gray text-sm mb-1">글자 가로/세로 비율</span>
+                    <strong class="text-lg text-krds-dark">장평</strong>
+                    <p class="text-krds-dark font-bold mt-2">건들지 말기 (100%)</p>
+                </div>
+                <div class="border border-krds-border p-4 rounded-lg">
+                    <span class="block text-krds-gray text-sm mb-1">글자 사이 간격</span>
+                    <strong class="text-lg text-krds-dark">자간</strong>
+                    <p class="text-krds-primary font-bold mt-2">음수값 (-25 ~ -50 등)</p>
+                </div>
+                <div class="border border-krds-border p-4 rounded-lg">
+                    <span class="block text-krds-gray text-sm mb-1">줄 사이 간격</span>
+                    <strong class="text-lg text-krds-dark">행간</strong>
+                    <p class="text-krds-primary font-bold mt-2">폰트 사이즈 × 1.2~1.6배</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="krds-box">
+                    <h4 class="text-lg font-bold text-krds-dark mb-3">가독성이 중요한 본문</h4>
+                    <ul class="krds-list text-sm text-krds-dark">
+                        <li><strong>웹(화면)용:</strong> 고딕 계열 추천</li>
+                        <li><strong>인쇄물용:</strong> 명조 계열 추천</li>
+                    </ul>
+                    <div class="mt-3 pt-3 border-t border-krds-border text-sm text-krds-gray">
+                        <p><strong>고딕 추천:</strong> Noto Sans KR, Pretendard, Wanted Sans</p>
+                        <p><strong>명조 추천:</strong> 부크크 명조, 리디 바탕, 고운 바탕</p>
+                    </div>
+                </div>
+                <div class="krds-box">
+                    <h4 class="text-lg font-bold text-krds-dark mb-3">꾸미기 & 타이틀</h4>
+                    <ul class="krds-list text-sm text-krds-dark">
+                        <li><strong>감성적인 디자인:</strong> 장평이 긴 폰트나 세리프 추천</li>
+                        <li><strong>활동적인 디자인:</strong> 장평이 넓고 짧은 폰트 추천</li>
+                    </ul>
+                    <div class="mt-3 pt-3 border-t border-krds-border text-sm text-krds-gray">
+                        <p><strong>포인트용 추천:</strong> 페이퍼로지, 에이투지체</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TTF / OTF -->
+            <div class="flex flex-col sm:flex-row gap-4 border-t border-krds-border pt-6">
+                <div class="flex-1 krds-box py-3 border-none flex items-center justify-between">
+                    <div>
+                        <h4 class="font-bold text-krds-dark">TTF <span class="text-sm font-normal text-krds-gray">(일반 문서)</span></h4>
+                        <p class="text-krds-gray text-sm">워드, PPT 등 일반 문서 작업용</p>
+                    </div>
+                    <span class="bg-gray-200 text-gray-700 text-xs font-bold px-2 py-1 rounded">Windows OS</span>
+                </div>
+                <div class="flex-1 krds-box py-3 border-none flex items-center justify-between">
+                    <div>
+                        <h4 class="font-bold text-krds-dark">OTF <span class="text-sm font-normal text-krds-gray">(그래픽 작업)</span></h4>
+                        <p class="text-krds-gray text-sm">일러스트, 포토샵 등 그래픽 작업용</p>
+                    </div>
+                    <span class="bg-gray-200 text-gray-700 text-xs font-bold px-2 py-1 rounded">Mac OS</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 맨 위로 가기 버튼 (KRDS 스타일) -->
+    <button id="scrollTopBtn" onclick="window.scrollTo(0,0)" class="fixed bottom-8 right-8 bg-krds-dark text-white w-12 h-12 rounded shadow-lg flex items-center justify-center text-xl hover:bg-gray-800 transition-colors opacity-0 invisible duration-300 z-50" aria-label="맨 위로 가기">
+        ▲
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+                scrollTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+    </script>
+</body>
+</html>
