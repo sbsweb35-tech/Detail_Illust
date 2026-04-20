@@ -187,7 +187,7 @@
 <body class="antialiased text-base">
 
     <!-- 상단 헤더 -->
-    <header class="bg-white border-b border-krds-border py-8 sticky top-0 z-50">
+    <header id="main-header" class="bg-white border-b border-krds-border py-8 sticky top-0 z-50 transition-transform duration-300 ease-in-out">
         <div class="max-w-5xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
@@ -989,21 +989,66 @@
 
     </main>
 
+    <!-- 맨 아래로 가기 버튼 -->
+    <button id="scrollBottomBtn" onclick="window.scrollTo(0, document.body.scrollHeight)" class="fixed bottom-8 right-8 bg-krds-dark text-white w-12 h-12 rounded shadow-lg flex items-center justify-center text-xl hover:bg-gray-800 transition-all duration-300 z-50 opacity-0 invisible transform translate-y-4" aria-label="맨 아래로 가기">
+        ▼
+    </button>
+
     <!-- 맨 위로 가기 버튼 -->
-    <button id="scrollTopBtn" onclick="window.scrollTo(0,0)" class="fixed bottom-8 right-8 bg-krds-dark text-white w-12 h-12 rounded shadow-lg flex items-center justify-center text-xl hover:bg-gray-800 transition-colors opacity-0 invisible duration-300 z-50" aria-label="맨 위로 가기">
+    <button id="scrollTopBtn" onclick="window.scrollTo(0,0)" class="fixed bottom-8 right-8 bg-krds-dark text-white w-12 h-12 rounded shadow-lg flex items-center justify-center text-xl hover:bg-gray-800 transition-all duration-300 z-50 opacity-0 invisible transform translate-y-4" aria-label="맨 위로 가기">
         ▲
     </button>
 
     <script>
         const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const scrollBottomBtn = document.getElementById('scrollBottomBtn');
+        const header = document.getElementById('main-header');
+        let lastScrollTop = 0;
+
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.remove('opacity-0', 'invisible');
-                scrollTopBtn.classList.add('opacity-100', 'visible');
-            } else {
-                scrollTopBtn.classList.add('opacity-0', 'invisible');
-                scrollTopBtn.classList.remove('opacity-100', 'visible');
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            let windowHeight = window.innerHeight;
+            let documentHeight = document.body.scrollHeight;
+
+            // 스크롤 방향에 따른 헤더 Slide Up/Down 로직
+            if (currentScroll > lastScrollTop && currentScroll > 80) {
+                // 스크롤을 내릴 때 (헤더를 위로 숨김)
+                header.classList.add('-translate-y-full');
+            } else if (currentScroll < lastScrollTop) {
+                // 스크롤을 올릴 때 (헤더를 다시 보여줌)
+                header.classList.remove('-translate-y-full');
             }
+
+            // 스크롤 방향에 따른 상단/하단 이동 버튼 활성화 로직
+            if (currentScroll > lastScrollTop) {
+                // 아래로 스크롤 시 -> 최하단 버튼 활성화, 최상단 버튼 숨김
+                scrollTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+
+                // 페이지 최하단 도달 시 최하단 버튼 숨김 처리
+                if (currentScroll + windowHeight < documentHeight - 20) {
+                    scrollBottomBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    scrollBottomBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+                } else {
+                    scrollBottomBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    scrollBottomBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                }
+            } else if (currentScroll < lastScrollTop) {
+                // 위로 스크롤 시 -> 최상단 버튼 활성화, 최하단 버튼 숨김
+                scrollBottomBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                scrollBottomBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+
+                // 페이지 최상단 도달 시 최상단 버튼 숨김 처리
+                if (currentScroll > 20) {
+                    scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    scrollTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+                } else {
+                    scrollTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                }
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
     </script>
 </body>
