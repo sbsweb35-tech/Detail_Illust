@@ -423,6 +423,91 @@
         =========================================== -->
         <h2 id="part2" class="krds-part-title">🛠️ PART 2. 핵심 기능 사전</h2>
 
+        <!-- 추가 된 핵심 기능 사전 -->
+        <section class="krds-card">
+            <h2 class="krds-sec-title">💡 실무를 위한 추가 핵심 기능 모음</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 문서 및 아트보드 -->
+                <div class="krds-box bg-white border border-krds-border">
+                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">📄 문서 및 대지(Artboard)</h3>
+                    <ul class="krds-list text-sm text-krds-dark space-y-2">
+                        <li><strong class="text-blue-600">도련 수정:</strong> 문서 제작 시 입력하거나, <kbd>File</kbd> &rarr; <kbd>Document Setup</kbd>에서 도련 재설정</li>
+                        <li><strong class="text-blue-600">PDF 추출:</strong> <kbd>File</kbd> &rarr; <kbd>Export</kbd> &rarr; <kbd>Export for Screens</kbd> <br>
+                            - Single File: 한 파일에 여러 아트보드 포함 <br>
+                            - Multiple Files: 아트보드 1개당 1개의 PDF 생성
+                        </li>
+                        <li><strong class="text-blue-600">대지 사이즈 측정:</strong> Artboard 툴(<kbd>Shift</kbd>+<kbd>O</kbd>) 선택 후 컨트롤 패널(상단) W/H 구간 확인</li>
+                        <li><strong class="text-blue-600">대지 영역만 보기:</strong> <kbd>View</kbd> &rarr; <kbd>Trim View</kbd></li>
+                    </ul>
+                </div>
+
+                <!-- 패스 및 앵커 포인트 -->
+                <div class="krds-box bg-white border border-krds-border">
+                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">✒️ 패스(Path) & 앵커 포인트</h3>
+                    <ul class="krds-list text-sm text-krds-dark space-y-2">
+                        <li><strong class="text-indigo-600">도형 생성:</strong> <kbd>Alt</kbd>+클릭 후 수치 입력 (클릭 지점이 도형의 중앙이 됨)</li>
+                        <li><strong class="text-indigo-600">Pencil Tool(<kbd>N</kbd>):</strong> <kbd>Enter</kbd> 눌러 옵션. Fidelity(Smooth쪽일수록 부드러운 패스 생성), Keep selected(선택 유지), Alt key toggles(Alt 누를 시 Smooth Tool로 전환), Edit selected path(선택된 패스에 덧대어 수정)</li>
+                        <li><strong class="text-indigo-600">Pen Tool:</strong> 곡면 예상 앵커 찍기 &rarr; Anchor Point Tool 활용 곡면 생성 (한쪽 핸들만 조절 가능). <br>
+                            - Pen + <kbd>Alt</kbd>: 곡면 생성 도구 토글 / Pen + <kbd>Ctrl</kbd>: Direct Selection Tool 토글
+                        </li>
+                        <li><strong class="text-indigo-600">앵커 포인트:</strong> <kbd>Object</kbd> &rarr; <kbd>Path</kbd> &rarr; <kbd>Add Anchor Point</kbd> (도형에 앵커 추가) / 떨어져 있는 앵커 모두 선택 후 우클릭 &rarr; <kbd>Average</kbd> &rarr; Both (앵커 모으기)</li>
+                        <li><strong class="text-indigo-600">가위(<kbd>C</kbd>) & 칼(Knife) 도구:</strong> Scissor(열린 패스로 마무리), Knife(닫힌 패스로 잘라냄, 선택하지 않아도 적용 가능)</li>
+                    </ul>
+                </div>
+
+                <!-- 색상, 그라디언트 & 페인트 -->
+                <div class="krds-box bg-white border border-krds-border">
+                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">🎨 색상, 그라디언트 & 라이브 페인트</h3>
+                    <ul class="krds-list text-sm text-krds-dark space-y-2">
+                        <li><strong class="text-pink-600">Swatches (견본):</strong> Global 체크 시 사용된 컬러 일괄 변경 가능 / 면색이 활성화된 상태에서 <kbd>+</kbd> 눌러 등록</li>
+                        <li><strong class="text-pink-600">Gradient (Freeform):</strong> 원하는 지점 클릭해 컬러 스탑 추가. (삭제: 클릭 후 <kbd>Delete</kbd>, 이동: 드래그, 색상변경: 더블클릭) <br>
+                        - 스와치 등록: 그라디언트 패널 색상박스 <kbd>▼</kbd> &rarr; 좌측 하단 다운로드 모양 클릭</li>
+                        <li><strong class="text-pink-600">Live Paint Tool(<kbd>K</kbd>):</strong> 열린 패스도 닫힌 패스처럼 색칠 가능. 사용 전 모든 패스 선택. 면색(클릭), 선색(<kbd>Shift</kbd>+클릭), 스포이드(<kbd>Alt</kbd>). <br>
+                        - 적용 시 기존 선 속성(brush 등)이 사라지므로 Expand 후 설정하거나 칠할 면을 뒤에 따로 둠. (해제: <kbd>Object</kbd>&rarr;<kbd>Live Paint</kbd>&rarr;Release / 굳히기: Expand)</li>
+                        <li><strong class="text-pink-600">Mesh(<kbd>U</kbd>):</strong> 부드럽게 혼합 및 입체 왜곡 (Lasso Tool과 자주 사용)</li>
+                        <li><strong class="text-pink-600">같은 색 도형만 선택:</strong> <kbd>Select</kbd> &rarr; <kbd>Same</kbd> &rarr; <kbd>Fill Color</kbd></li>
+                    </ul>
+                </div>
+
+                <!-- 변형, 효과 & 패턴 -->
+                <div class="krds-box bg-white border border-krds-border">
+                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">✨ 변형(Transform), 효과 & 패턴</h3>
+                    <ul class="krds-list text-sm text-krds-dark space-y-2">
+                        <li><strong class="text-teal-600">Effect & 중첩:</strong> Zigzag(Points를 Smooth로 지정 시 물결), Blur 등. <br> 
+                        - Appearance(모양) 패널에서 적용된 효과 이름 선택해서 수정. 효과 이중 사용 시 'Apply new effect' 안내창 발생. <br>
+                        - 효과 적용 후 <kbd>Expand Appearance</kbd> 필수.</li>
+                        <li><strong class="text-teal-600">Blend(<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>):</strong> 레이어 순서(위:시작&rarr;아래:끝) 영향 받음. 해제 시 중간 경로가 투명 선으로 남으므로 지우고 재적용.</li>
+                        <li><strong class="text-teal-600">패턴(Pattern) 등록:</strong> Swatches로 드래그 또는 <kbd>Object</kbd> &rarr; <kbd>Pattern</kbd> &rarr; <kbd>Make</kbd>. <br>
+                        - 모양 변경: Transform 기능(단, Transform Objects 체크 해제 후 사용). 배경색: Appearance 활용.</li>
+                        <li><strong class="text-teal-600">3D:</strong> Classic(모양 확장/면 분리 가능) vs 3D(모양 확장 불가, 이미지로 굳어버림)</li>
+                    </ul>
+                </div>
+
+                <!-- 정렬 및 기타 도구 -->
+                <div class="krds-box bg-white border border-krds-border md:col-span-2">
+                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">📏 정렬, 격자 및 특수 도구</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ul class="krds-list text-sm text-krds-dark space-y-2">
+                            <li><strong class="text-amber-600">Distribute Spacing (간격 정렬):</strong> <br>
+                            - Key Object 미설정: 첫 도형과 끝 도형 기준 중간 간격 자동 분배 <br>
+                            - Key Object 설정: 수치 입력 가능 (Enter 안됨, 세로/가로 간격 버튼 눌러 적용)</li>
+                            <li><strong class="text-amber-600">Align 활용 앵커 모으기:</strong> 마지막으로 선택한 점을 기준으로 정렬됨. Key Anchor 설정 후 가운데 &rarr; 좌/우 정렬 수행.</li>
+                            <li><strong class="text-amber-600">Compound Path(<kbd>Ctrl</kbd>+<kbd>8</kbd>):</strong> 여러 개의 경로를 완벽히 하나의 경로처럼 인식. (단순 묶기인 Group과의 차이점)</li>
+                        </ul>
+                        <ul class="krds-list text-sm text-krds-dark space-y-2">
+                            <li><strong class="text-amber-600">아이소메트릭 그리드 (Isometric Grid):</strong> <br>
+                            - 정육각형 기반, Guides 역할을 할 선의 개수는 홀수 (예: 101개). <br>
+                            - 긴 선 생성 &rarr; <kbd>Transform</kbd>(간격 14px, 100개 복제) &rarr; <kbd>Expand</kbd> &rarr; <kbd>Rotate</kbd>(60도) &rarr; <kbd>Reflect</kbd>(Vertical).</li>
+                            <li><strong class="text-amber-600">Width Tool(<kbd>Shift</kbd>+<kbd>W</kbd>) & Stroke Profile:</strong> 선의 특정 폭 도구 및 전반적인 선의 형태 변경.</li>
+                            <li><strong class="text-amber-600">Blending (혼합 모드):</strong> Transparency 패널(Opacity 왼쪽 Normal 부분)에서 변경.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section class="krds-card">
             <h2 class="krds-sec-title">3. 형태 생성 및 기본 수정</h2>
 
@@ -639,91 +724,6 @@
             </div>
         </section>
 
-        <!-- 추가 된 핵심 기능 사전 -->
-        <section class="krds-card">
-            <h2 class="krds-sec-title">💡 실무를 위한 추가 핵심 기능 모음</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- 문서 및 아트보드 -->
-                <div class="krds-box bg-white border border-krds-border">
-                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">📄 문서 및 대지(Artboard)</h3>
-                    <ul class="krds-list text-sm text-krds-dark space-y-2">
-                        <li><strong class="text-blue-600">도련 수정:</strong> 문서 제작 시 입력하거나, <kbd>File</kbd> &rarr; <kbd>Document Setup</kbd>에서 도련 재설정</li>
-                        <li><strong class="text-blue-600">PDF 추출:</strong> <kbd>File</kbd> &rarr; <kbd>Export</kbd> &rarr; <kbd>Export for Screens</kbd> <br>
-                            - Single File: 한 파일에 여러 아트보드 포함 <br>
-                            - Multiple Files: 아트보드 1개당 1개의 PDF 생성
-                        </li>
-                        <li><strong class="text-blue-600">대지 사이즈 측정:</strong> Artboard 툴(<kbd>Shift</kbd>+<kbd>O</kbd>) 선택 후 컨트롤 패널(상단) W/H 구간 확인</li>
-                        <li><strong class="text-blue-600">대지 영역만 보기:</strong> <kbd>View</kbd> &rarr; <kbd>Trim View</kbd></li>
-                    </ul>
-                </div>
-
-                <!-- 패스 및 앵커 포인트 -->
-                <div class="krds-box bg-white border border-krds-border">
-                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">✒️ 패스(Path) & 앵커 포인트</h3>
-                    <ul class="krds-list text-sm text-krds-dark space-y-2">
-                        <li><strong class="text-indigo-600">도형 생성:</strong> <kbd>Alt</kbd>+클릭 후 수치 입력 (클릭 지점이 도형의 중앙이 됨)</li>
-                        <li><strong class="text-indigo-600">Pencil Tool(<kbd>N</kbd>):</strong> <kbd>Enter</kbd> 눌러 옵션. Fidelity(Smooth쪽일수록 부드러운 패스 생성), Keep selected(선택 유지), Alt key toggles(Alt 누를 시 Smooth Tool로 전환), Edit selected path(선택된 패스에 덧대어 수정)</li>
-                        <li><strong class="text-indigo-600">Pen Tool:</strong> 곡면 예상 앵커 찍기 &rarr; Anchor Point Tool 활용 곡면 생성 (한쪽 핸들만 조절 가능). <br>
-                            - Pen + <kbd>Alt</kbd>: 곡면 생성 도구 토글 / Pen + <kbd>Ctrl</kbd>: Direct Selection Tool 토글
-                        </li>
-                        <li><strong class="text-indigo-600">앵커 포인트:</strong> <kbd>Object</kbd> &rarr; <kbd>Path</kbd> &rarr; <kbd>Add Anchor Point</kbd> (도형에 앵커 추가) / 떨어져 있는 앵커 모두 선택 후 우클릭 &rarr; <kbd>Average</kbd> &rarr; Both (앵커 모으기)</li>
-                        <li><strong class="text-indigo-600">가위(<kbd>C</kbd>) & 칼(Knife) 도구:</strong> Scissor(열린 패스로 마무리), Knife(닫힌 패스로 잘라냄, 선택하지 않아도 적용 가능)</li>
-                    </ul>
-                </div>
-
-                <!-- 색상, 그라디언트 & 페인트 -->
-                <div class="krds-box bg-white border border-krds-border">
-                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">🎨 색상, 그라디언트 & 라이브 페인트</h3>
-                    <ul class="krds-list text-sm text-krds-dark space-y-2">
-                        <li><strong class="text-pink-600">Swatches (견본):</strong> Global 체크 시 사용된 컬러 일괄 변경 가능 / 면색이 활성화된 상태에서 <kbd>+</kbd> 눌러 등록</li>
-                        <li><strong class="text-pink-600">Gradient (Freeform):</strong> 원하는 지점 클릭해 컬러 스탑 추가. (삭제: 클릭 후 <kbd>Delete</kbd>, 이동: 드래그, 색상변경: 더블클릭) <br>
-                        - 스와치 등록: 그라디언트 패널 색상박스 <kbd>▼</kbd> &rarr; 좌측 하단 다운로드 모양 클릭</li>
-                        <li><strong class="text-pink-600">Live Paint Tool(<kbd>K</kbd>):</strong> 열린 패스도 닫힌 패스처럼 색칠 가능. 사용 전 모든 패스 선택. 면색(클릭), 선색(<kbd>Shift</kbd>+클릭), 스포이드(<kbd>Alt</kbd>). <br>
-                        - 적용 시 기존 선 속성(brush 등)이 사라지므로 Expand 후 설정하거나 칠할 면을 뒤에 따로 둠. (해제: <kbd>Object</kbd>&rarr;<kbd>Live Paint</kbd>&rarr;Release / 굳히기: Expand)</li>
-                        <li><strong class="text-pink-600">Mesh(<kbd>U</kbd>):</strong> 부드럽게 혼합 및 입체 왜곡 (Lasso Tool과 자주 사용)</li>
-                        <li><strong class="text-pink-600">같은 색 도형만 선택:</strong> <kbd>Select</kbd> &rarr; <kbd>Same</kbd> &rarr; <kbd>Fill Color</kbd></li>
-                    </ul>
-                </div>
-
-                <!-- 변형, 효과 & 패턴 -->
-                <div class="krds-box bg-white border border-krds-border">
-                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">✨ 변형(Transform), 효과 & 패턴</h3>
-                    <ul class="krds-list text-sm text-krds-dark space-y-2">
-                        <li><strong class="text-teal-600">Effect & 중첩:</strong> Zigzag(Points를 Smooth로 지정 시 물결), Blur 등. <br> 
-                        - Appearance(모양) 패널에서 적용된 효과 이름 선택해서 수정. 효과 이중 사용 시 'Apply new effect' 안내창 발생. <br>
-                        - 효과 적용 후 <kbd>Expand Appearance</kbd> 필수.</li>
-                        <li><strong class="text-teal-600">Blend(<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>):</strong> 레이어 순서(위:시작&rarr;아래:끝) 영향 받음. 해제 시 중간 경로가 투명 선으로 남으므로 지우고 재적용.</li>
-                        <li><strong class="text-teal-600">패턴(Pattern) 등록:</strong> Swatches로 드래그 또는 <kbd>Object</kbd> &rarr; <kbd>Pattern</kbd> &rarr; <kbd>Make</kbd>. <br>
-                        - 모양 변경: Transform 기능(단, Transform Objects 체크 해제 후 사용). 배경색: Appearance 활용.</li>
-                        <li><strong class="text-teal-600">3D:</strong> Classic(모양 확장/면 분리 가능) vs 3D(모양 확장 불가, 이미지로 굳어버림)</li>
-                    </ul>
-                </div>
-
-                <!-- 정렬 및 기타 도구 -->
-                <div class="krds-box bg-white border border-krds-border md:col-span-2">
-                    <h3 class="font-bold text-lg text-krds-dark mb-3 border-b border-krds-border pb-2">📏 정렬, 격자 및 특수 도구</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <ul class="krds-list text-sm text-krds-dark space-y-2">
-                            <li><strong class="text-amber-600">Distribute Spacing (간격 정렬):</strong> <br>
-                            - Key Object 미설정: 첫 도형과 끝 도형 기준 중간 간격 자동 분배 <br>
-                            - Key Object 설정: 수치 입력 가능 (Enter 안됨, 세로/가로 간격 버튼 눌러 적용)</li>
-                            <li><strong class="text-amber-600">Align 활용 앵커 모으기:</strong> 마지막으로 선택한 점을 기준으로 정렬됨. Key Anchor 설정 후 가운데 &rarr; 좌/우 정렬 수행.</li>
-                            <li><strong class="text-amber-600">Compound Path(<kbd>Ctrl</kbd>+<kbd>8</kbd>):</strong> 여러 개의 경로를 완벽히 하나의 경로처럼 인식. (단순 묶기인 Group과의 차이점)</li>
-                        </ul>
-                        <ul class="krds-list text-sm text-krds-dark space-y-2">
-                            <li><strong class="text-amber-600">아이소메트릭 그리드 (Isometric Grid):</strong> <br>
-                            - 정육각형 기반, Guides 역할을 할 선의 개수는 홀수 (예: 101개). <br>
-                            - 긴 선 생성 &rarr; <kbd>Transform</kbd>(간격 14px, 100개 복제) &rarr; <kbd>Expand</kbd> &rarr; <kbd>Rotate</kbd>(60도) &rarr; <kbd>Reflect</kbd>(Vertical).</li>
-                            <li><strong class="text-amber-600">Width Tool(<kbd>Shift</kbd>+<kbd>W</kbd>) & Stroke Profile:</strong> 선의 특정 폭 도구 및 전반적인 선의 형태 변경.</li>
-                            <li><strong class="text-amber-600">Blending (혼합 모드):</strong> Transparency 패널(Opacity 왼쪽 Normal 부분)에서 변경.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
 
         <!-- ==========================================
              PART 3. 실전 예제 따라하기
@@ -873,6 +873,19 @@
                 <p class="pt-3 border-t border-krds-border"><strong>16.</strong> [부분선택 툴] &rarr; 불필요한 부분 삭제 &rarr; [Lasso Tool]: 가까운 점들을 원하는 만큼 드래그 삭제</p>
                 <p class="pt-3 border-t border-krds-border"><strong>17.</strong> [Object] &rarr; [Path] &rarr; [Simplify]: 추가된 점들 삭제</p>
                 <p class="pt-3 border-t border-krds-border"><strong>18.</strong> [Add Anchor Point Tool]: 자르고 싶은 외곽에 부분 포인트 추가 &rarr; 포인트 지점만큼 삭제 <br> <span class="text-sm text-krds-gray">* [Scissors Tool], [Pen Tool]: 자르고 싶은 부분 포인트 추가</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>19.</strong> 정원 4개를 12mm, 6mm, 13mm, 6mm 제작 <br>
+                - 2번째 6mm 선택 후 [전체선택 툴] &rarr; 가로: 18mm <br>
+                - 3번째 13mm 선택 후 [전체선택 툴] &rarr; 가로: 6mm <br>
+                - 4번째 6mm 선택 후 [전체선택 툴] &rarr; 가로: 31mm <br>
+                - 각 원의 반쪽 제거 &rarr; 직선 연결 <br>
+                - [Object] &rarr; [Path] &rarr; [Offset Path]: offset: 3.5mm, 4 <br>
+                - 그룹 &rarr; 원하는 부분 삭제 &rarr; 반대로 복제</p>
+                <p class="pt-3 border-t border-krds-border"><strong>20.</strong> [Line Segment Tool] &rarr; W: 120mm <br>
+                - [Effect] &rarr; [Distort & Transform] &rarr; [Zig Zag]: Relative [v], Size: 7%, Segment: 2, Smooth [v] <br>
+                - [Object] &rarr; [Expand Appearance] 확장</p>
+                <p class="pt-3 border-t border-krds-border"><strong>21.</strong> [Type] &rarr; [Create Outlines] (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>) <br>
+                - [Effect] &rarr; [Distort & Transform] &rarr; [Zig Zag]: Relative [v], Size: 7%, Segment: 2, Smooth [v] <br>
+                - [Object] &rarr; [Expand Appearance] 확장</p>
             </div>
         </section>
 
@@ -974,7 +987,7 @@
             <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 4. 꼬리가 있는 휘어진 리본 만들기</h4>
             <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
                 <p><strong>1.</strong> [File] &rarr; [Open]으로 'Style05_ribbon.ai' 열기 <br>
-                - [Object] &rarr; [Envelope Distort] &rarr; [Make with Warp] (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd>) <br>
+                - [Object] &rarr; [Envelope Distort] &rarr; [Make with Warp] &rarr; [Flag] (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd>) <br>
                 - 첫번째 오브젝트: -25%, 두번째 오브젝트: 25% <br>
                 <span class="text-sm text-krds-gray">* 흰 선이 잘 보이도록 작업 과정에서는 짙은 색 배경 지정</span></p>
                 <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 첫번째 오브젝트: 리본 꼬리 부분 그리기</p>
