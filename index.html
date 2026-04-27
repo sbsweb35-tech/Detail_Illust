@@ -211,6 +211,7 @@
                     <a href="#part3" class="sub-menu">↳ 로고 제작</a>
                     <a href="#line-illust" class="sub-menu">↳ 라인 일러스트 포스터</a>
                     <a href="#sunburst" class="sub-menu">↳ 선버스트 디자인 & 빈티지 해상 포스터 제작</a>
+                    <a href="#isometric" class="sub-menu">↳ 아이소메트릭 일러스트</a>
                 </div>
 
                 <a href="#part4">📝 실무/공모전 가이드</a>
@@ -309,6 +310,20 @@
                 <ol class="list-decimal list-inside space-y-3 text-lg text-krds-dark font-medium ml-2">
                     <li>선버스트 디자인&빈티지 해상 포스터 디자인</li>
                     <li>스티플 브러시 만들기 및 거친 질감 표현하기</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="krds-card">
+            <h2 class="krds-sec-title flex justify-between items-center">
+                <span>Day 6. 6일차 내용</span>
+                <a href="https://drive.google.com/drive/folders/1SZG6SyS-f6Bkja8pXJr9_qfzyMHoIp2y?usp=sharing" target="_blank" class="bg-krds-primary text-white text-base font-bold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
+                    📥 예제 다운로드
+                </a>
+            </h2>
+            <div class="krds-box border-l-4 border-l-krds-primary bg-white shadow-sm">
+                <ol class="list-decimal list-inside space-y-3 text-lg text-krds-dark font-medium ml-2">
+                    <li>아이소메트릭</li>
                 </ol>
             </div>
         </section>
@@ -1022,7 +1037,7 @@
                 - [Line Segment Tool]: 로프 아래쪽에 긴 선 배치 <br>
                 - [Effect] &rarr; [Distort & Transform] &rarr; [Zigzag] &rarr; Size: 1.2mm, Absolute [v], Segment: 15, Smooth [v] <br>
                 - 사본 생성 &rarr; 첫번째 선 색: C100, M70, Y25, K0 / 두번째 선 색: C85, M50, Y0, K0 <br>
-                - 두 개의 색상이 반복되도록 여러 개를 복사 &rarr; 모두 선택한 후 <kbd>Ctrl</kbd>+<kbd>G</kbd>로 그룹 &rarr; [Object] &rarr; [Expand Appearance]</p>
+                - 두 개의 색상이 반복되도록 여러 개 복사 &rarr; 모두 선택한 후 <kbd>Ctrl</kbd>+<kbd>G</kbd>로 그룹 &rarr; [Object] &rarr; [Expand Appearance]</p>
                 <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 로프 오브젝트 복제 &rarr; 선: x, 면: 임의컬러 <br>
                 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>]</kbd> 레이어 최상단 이동 <br>
                 - <kbd>Ctrl</kbd>+<kbd>7</kbd> 클리핑 마스크 적용</p>
@@ -1069,37 +1084,91 @@
             </div>
         </section>
 
-        <section id="shadow-recipe" class="krds-card">
-            <h2 class="krds-sec-title">5. 특수 효과 (그림자/빗반사) 레시피</h2>
+        <!-- 새로 추가된 섹션: 아이소메트릭 일러스트 -->
+        <section id="isometric" class="krds-card">
+            <h2 class="krds-sec-title">8. 아이소메트릭 일러스트 실전 제작</h2>
             
-            <p class="text-krds-dark text-lg mb-6">입체감과 고급스러움을 더해주는 자연스러운 그림자와 빗반사를 만드는 2가지 비법입니다.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- 방법 1 -->
-                <div class="border border-krds-border rounded-lg p-5">
-                    <h4 class="font-bold text-lg text-krds-dark mb-3">방법 1. 그라디언트(Gradient) 그림자</h4>
-                    <p class="text-sm text-krds-gray mb-4">색상 자체를 자연스럽게 빼면서 그림자를 만듭니다.</p>
-                    <ol class="list-decimal list-inside space-y-3 text-sm text-krds-dark bg-krds-light p-4 rounded">
-                        <li>여러 개체라면 반드시 <kbd>Ctrl</kbd>+<kbd>8</kbd> (컴파운드 패스) 적용</li>
-                        <li><kbd>G</kbd> 누르고 <kbd>Enter</kbd> (그라디언트 90도 선형 적용)</li>
-                        <li class="text-krds-primary font-bold">양쪽 색상을 원본 도형과 동일하게 맞춥니다. (어색한 검정/흰색 X)</li>
-                        <li>사라질 쪽 컬러를 선택하고 <strong>Opacity(투명도) 0%</strong> 적용</li>
-                        <li>도형 전체 투명도를 40~60%로 낮춥니다.</li>
-                    </ol>
+            <div class="mb-6 border-b border-krds-border pb-6">
+                <h3 class="font-bold text-lg text-krds-dark mb-3">💡 아이소메트릭(Isometric) 이란?</h3>
+                <div class="krds-box bg-gray-50 border-gray-200">
+                    <p class="text-sm text-krds-gray mb-2">'아이소메트릭 맵'이나 '아이소메트릭 가이드'라고도 부르며, 3차원의 입체감을 2차원 평면상에 정확한 비율로 표현하는 기법입니다.</p>
                 </div>
+            </div>
 
-                <!-- 방법 2 -->
-                <div class="border border-gray-800 bg-gray-800 rounded-lg p-5">
-                    <h4 class="font-bold text-lg text-white mb-3">방법 2. 오퍼시티 마스크 빗반사</h4>
-                    <p class="text-sm text-gray-400 mb-4">마스크를 씌워 빛이 반사되는 듯한 효과를 냅니다.</p>
-                    <ol class="list-decimal list-inside space-y-3 text-sm text-gray-200 bg-gray-900 p-4 rounded border border-gray-700">
-                        <li>원본 복사본 위에 '흰색~검정' 그라디언트 사각형 덮기</li>
-                        <li>둘 다 선택 후 <strong>Transparency 패널 &rarr; Make Mask</strong></li>
-                        <li>마스크 썸네일(오른쪽) 클릭 후 <kbd>G</kbd> 눌러 방향 조절</li>
-                        <li class="text-blue-300 font-bold">완전한 투명을 위해 검정색 코드를 #000000으로 맞춥니다.</li>
-                        <li>썸네일 왼쪽(원본) 클릭 후 도형 전체 투명도 40~60% 조절</li>
-                    </ol>
-                </div>
+            <h3 class="font-bold text-xl text-krds-dark mb-4">🚀 스텝별 제작 과정</h3>
+            
+            <h4 class="font-bold text-lg text-krds-primary mb-2">Step 1. 아이소메트릭 그리드 만들기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [File] &rarr; [New] &rarr; 단위: pixel, 가로/세로: 1000px &rarr; 문서 생성</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 면색x, 선색 지정 &rarr; [Line Segment Tool] &rarr; 빈 화면 클릭 <br>
+                - Length: 1500px, Angle: 90도 &rarr; [OK] &rarr; 화면 임의의 공간에 배치 <br>
+                <span class="text-sm text-krds-gray">* plus 본 교재에 수록된 17과 18의 본문 내용은 자료 폴더 안에 PDF 파일로 제공됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 라인 선택 &rarr; [Effect] &rarr; [Distort & Transform] &rarr; [Transform] <br>
+                - Horizontal: 14px, Copies: 100 &rarr; [OK] (총 101개 생성) <br>
+                <span class="text-sm text-blue-600 font-bold">* Tip: 가로 간격 값은 크게 중요하지 않으나, 정렬 편의를 위해 최종 개수가 홀수가 되도록 Copies 값을 설정</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> [Object] &rarr; [Expand Appearance] <br>
+                - [Align] (<kbd>Shift</kbd>+<kbd>F7</kbd>) &rarr; 문서를 기준으로 중앙 정렬</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 개체 선택 &rarr; [Rotate Tool] 더블클릭 &rarr; Angle: 60도 &rarr; [Copy]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 회전된 개체 선택 &rarr; [Reflect Tool] 더블클릭 &rarr; Vertical 선택 &rarr; [Copy]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 모든 개체 선택 &rarr; [Stroke] (<kbd>Ctrl</kbd>+<kbd>F10</kbd>) &rarr; 두께: 0.25pt / [Swatches] &rarr; 파란색 클릭 적용</p>
+                <p class="pt-3 border-t border-krds-border"><strong>8.</strong> 1000px 정사각형 생성 &rarr; 문서 가운데 정렬 <br>
+                - <kbd>Ctrl</kbd>+<kbd>A</kbd>: 개체 모두 선택 &rarr; <kbd>Ctrl</kbd>+<kbd>7</kbd>: 클리핑 마스크 적용 (그리드 작업 완료)</p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2">Step 2. 그리드 위에 건물 윗부분 그리기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] (<kbd>F7</kbd>) &rarr; 기존 레이어 '아이소메트릭'으로 이름 수정 및 잠금 &rarr; 새 '건물' 레이어 생성 <br>
+                - [Pen Tool] &rarr; 넓은 면 22칸, 좁은 면 18칸, 폭 2칸 크기의 막힌 도형 그리기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 기존 개체 반전 &rarr; 반대쪽으로 이동 및 복사 &rarr; 180도 회전하여 배치 <br>
+                - 나머지 부분 이어서 그리기 (색상: #e8caaa, #d3b798)</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 건물 윗부분 및 벽면 그리기 (색상: #e59a7c, #ba7965) <br>
+                - [Direct Selection Tool] &rarr; 벽면 오른쪽 점 2개만 선택 <br>
+                - [Direct Selection Tool] 더블클릭 &rarr; 각도: 30도, 거리: -7px &rarr; [OK] <br>
+                <span class="text-sm text-krds-gray">* 사선 방향으로 점 2개 이동됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> [Direct Selection Tool] &rarr; 반대쪽 점 2개 선택 &rarr; 각도: -30도, 거리: 7px &rarr; [OK] <br>
+                <span class="text-sm text-krds-gray">* 반대쪽 사선 방향으로 점 2개 이동됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 건물 중간에 튀어나온 벽 그리기 &rarr; 윗면 이어서 작업</p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 반대쪽도 동일하게 작업 &rarr; 건물 옥상 완성</p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2">Step 3. 그리드 위에 건물 아랫부분 그리기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base">
+                <p><strong>1.</strong> 건물 양쪽 끝에 3×14칸 긴 벽면 그리기 / 앞쪽에 1×15칸 갈색 나무 기둥 그리기 (색상: #9f6d58, #7f4f3e)</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 6×14칸 창문 그리기 (색상: #744a52). <br>
+                - 왼쪽 벽면에 나무 기둥 3개 배치, 오른쪽 창문은 7×14칸 크기로 작업 <br>
+                - 건물 가운데 2×14칸 기둥 그리기, 한쪽 완성 후 반대쪽은 복사 및 반전하여 배치 <br>
+                - 건물 아랫부분 턱 그리기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 반대쪽도 동일한 방법으로 건물 아랫부분 턱 그리기 <br>
+                - 문과 아래 계단 그리기 <br>
+                - 나머지 부분 이어서 작업 <br>
+                - 왼쪽 면이 더 어두운 것을 고려하여 색상 지정 <br><br>
+                <span class="text-sm text-red-600 font-bold">* plus 여기까지의 과정이 'Style17_1_course1.ai' 파일로 저장되어 있음</span></p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 4. 작은 그림자들 표현하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; '아이소메트릭' 레이어를 위로 이동 <br>
+                환경설정 (<kbd>Ctrl</kbd> + <kbd>K</kbd>) &rarr; Keyboard Increment: 1px &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 옥상 아랫부분에 세로 1칸 검은색 면 그리기 <br>
+                - 아래쪽 점 2개만 선택 &rarr; 위쪽 방향키 8~10번 눌러 높이 축소 <br>
+                - [Transparency] (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F10</kbd>) &rarr; 블렌드 모드: Soft Light, Opacity: 50% <br>
+                - 반대쪽도 반전시켜 동일하게 작업 <br>
+                <span class="text-sm text-krds-gray">* plus 검은색 개체는 블렌드 모드 Overlay, Soft Light 2가지로 어둡게 만들 수 있음</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 나무 기둥 부분에 1칸 그림자 생성, 아래쪽 점 2개만 선택 &rarr; 아래쪽 방향키 8~10번 누르기 우측 상단 점을 아래로 이동하여 위치 맞추기 <br>
+                - [Transparency] &rarr; 블렌드 모드: Soft Light, Opacity: 50%</p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 나머지 부분도 동일하게 작업하여 상단에서 아랫부분으로 짧은 그림자 표현 <br>
+                - [Layers] &rarr; '아이소메트릭' 레이어 눈 끄기 &rarr; 어색하거나 잘못된 부분 확인 <br>
+                <span class="text-sm text-red-600 font-bold">* plus 여기까지의 과정이 'Style17_1_course2.ai' 파일로 저장되어 있음</span></p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 5. 창문과 문의 반사광 만들기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base">
+                <p><strong>1.</strong> 모퉁이를 둥글린 흰색 사각형 생성 &rarr; 다양한 크기와 간격으로 60도 회전하여 창문 위치에 배치 <br>
+                - [Shape Builder Tool] &rarr; 창문과 흰색 개체 동시 선택 &rarr; <kbd>Alt</kbd> 키를 누른 채 창문 바깥쪽의 불필요한 부분 정리</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 흰색 개체들만 선택 &rarr; [Transparency] &rarr; Opacity: 5%</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 동일한 방법으로 이어서 작업</p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 반대쪽 창문도 동일하게 작업 (다른 각도로 작업해도 무방함) <br>
+                <span class="text-sm text-krds-gray">* plus 예제에서는 이전과 같은 60도로 작업함</span></p>
             </div>
         </section>
 
@@ -1110,7 +1179,7 @@
         <h2 id="part4" class="krds-part-title">📝 PART 4. 실무/공모전 가이드</h2>
 
         <section class="krds-card">
-            <h2 class="krds-sec-title">8. 폰트(글꼴) 실무 사용 가이드</h2>
+            <h2 class="krds-sec-title">9. 폰트(글꼴) 실무 사용 가이드</h2>
 
             <h3 class="krds-sub-title mt-0">상업적 이용 가능한 무료 폰트</h3>
             <p class="text-krds-gray mb-4">상세페이지, 배너, 포트폴리오 등에는 반드시 상업적 무료 폰트를 사용하세요.</p>
@@ -1189,7 +1258,7 @@
         </section>
         
         <section class="krds-card mb-0">
-            <h2 class="krds-sec-title">9. 포트폴리오 및 공모전 가이드</h2>
+            <h2 class="krds-sec-title">10. 포트폴리오 및 공모전 가이드</h2>
 
             <div class="grid grid-cols-1 gap-6">
                 <!-- 프로세스 페이지 및 라우드 소싱 -->
