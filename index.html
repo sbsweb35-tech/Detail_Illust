@@ -214,6 +214,7 @@
                     <a href="#isometric" class="sub-menu">↳ 아이소메트릭 일러스트</a>
                     <a href="#blend-illust" class="sub-menu">↳ 블렌드 일러스트 제작</a>
                     <a href="#mesh-illust" class="sub-menu">↳ 메쉬 일러스트 제작</a>
+                    <a href="#effect-panel" class="sub-menu">↳ 효과 패널 응용 예제</a>
                 </div>
 
                 <a href="#part4">📝 실무/공모전 가이드</a>
@@ -356,6 +357,21 @@
                 <ol class="list-decimal list-inside space-y-3 text-lg text-krds-dark font-medium ml-2">
                     <li>블렌드 도구를 이용한 일러스트 제작</li>
                     <li>메쉬</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="krds-card">
+            <h2 class="krds-sec-title flex justify-between items-center">
+                <span>Day 9. 9일차 내용</span>
+                <a href="https://drive.google.com/drive/folders/1hCSEFkTmgLHNwjTUq5-WZSYmtNJVJKN1?usp=sharing" target="_blank" class="bg-krds-primary text-white text-base font-bold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
+                    📥 예제 다운로드
+                </a>
+            </h2>
+            <div class="krds-box border-l-4 border-l-krds-primary bg-white shadow-sm">
+                <ol class="list-decimal list-inside space-y-3 text-lg text-krds-dark font-medium ml-2">
+                    <li>메쉬 일러스트 제작</li>
+                    <li>효과 패널 응용 예제</li>
                 </ol>
             </div>
         </section>
@@ -1531,6 +1547,153 @@
             </div>
         </section>
 
+        <!-- 효과 패널 응용 예제 (레트로 포스터 제작) -->
+        <section id="effect-panel" class="krds-card">
+            <h2 class="krds-sec-title">11. 효과 패널 응용 예제 (레트로 포스터 제작)</h2>
+
+            <h3 class="font-bold text-xl text-krds-dark mb-4">🚀 스텝별 제작 과정</h3>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2">Step 1. 새 문서를 열고 배경 라인 작업하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p class="text-sm text-krds-gray mb-2">* 시점이 적용된 격자 배경을 만들고, 어피어런스를 통해 포토샵처럼 레이어 쌓듯이 작업함</p>
+                <p class="pt-3 border-t border-krds-border"><strong>1.</strong> [File]-[New] &rarr; 파일명 입력, 단위: Pixels, 크기: 2000&times;1500 지정 &rarr; Advanced Options: RGB Color, Screen(72ppi) 확인 후 문서 생성 <br>
+                <span class="text-sm text-krds-gray">* plus 본 교재에 수록된 16의 본문 내용은 자료 폴더 안에 PDF 파일로 제공됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 2000&times;1500px 사각형 생성 &rarr; 방사형 그라디언트 적용 (왼쪽 색: #413c3c, 오른쪽 색: #000416) &rarr; 비율: 75% 지정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> [Layers] (<kbd>F7</kbd>) &rarr; 기존 레이어 '배경'으로 수정 및 잠금 &rarr; 새 '라인' 레이어 생성 &rarr; [Rectangular Grid Tool] 선택 후 빈 화면 클릭 &rarr; 가로세로 크기: 2000&times;500, 가로줄: 7, 세로줄: 18 입력 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 하단에 개체 배치 &rarr; 면색x, 선색: 흰색 (2pt) 지정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> [Free Transform Tool] 선택 &rarr; 개체 우측 모서리 하단 클릭 후 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> 누른 채로 원하는 만큼 드래그하여 시점 적용</p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> [Object]-[Path]-[Outline Stroke]로 선을 면으로 확장 &rarr; [Pathfinder] &rarr; 합치기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 개체 선택 상태에서 [Appearance] (<kbd>Shift</kbd> + <kbd>F6</kbd>) 열기 &rarr; 'Fill' 선택 확인 &rarr; 하단 Add New Fill 클릭하여 두 번째 'Fill' 생성 &rarr; 아래쪽 'Fill' 선택 &rarr; [Color] (<kbd>F6</kbd>) 열고 #ff00c4 지정 <br>
+                <span class="text-sm text-blue-600 font-bold">* Tip 컬러는 도구 패널에서 입력해도 되나, [Appearance] 패널에서 적용 시 원하는 면이나 선이 선택되어 있는지 가장 먼저 확인해야 함</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>8.</strong> 색상 변경 확인 &rarr; 해당 'Fill' 선택 상태에서 [fx]-[Path]-[Offset Path] 클릭 &rarr; 2px 입력 &rarr; [OK] <br>
+                <span class="text-sm text-krds-gray">* plus [Appearance]에서 효과를 적용하려면 먼저 개체가 선택되어야 하고, 패널 내 원하는 면/선을 선택 후 진행해야 정확히 적용됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>9.</strong> 해당 'Fill' 속성 열기 &rarr; Opacity: 50% 설정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>10.</strong> 하단 Add New Fill 클릭하여 새 면 생성 &rarr; 밑으로 드래그하여 위치 변경 &rarr; 이동한 'Fill'의 Offset Path: 6px, Opacity: 10% 설정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>11.</strong> 2000&times;1500px 사각형 생성 후 문서 가운데 정렬 &rarr; 전체 선택 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용</p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 2. 빛 작업하기-1</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; '라인-빛' 레이어 생성 및 가운데 이동 &rarr; 나머지 레이어 모두 잠금 &rarr; 적당한 크기 원 생성 &rarr; 방사형 그라디언트 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 그라디언트 색 정보 (1번: #FFFFFF(0%), 2번: #ff00c4(12%), 3번: #020a01(72%), 4번: #000000(100%))</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 원 개체를 가로로 길쭉하게 변형 후 하단 배치 &rarr; [Transparency] (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F10</kbd>) &rarr; 블렌드 모드: Screen 지정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 개체 여러 개 복사하여 그림처럼 배치 &rarr; 2000&times;1500px 사각형 생성 후 문서 가운데 정렬 &rarr; 전체 선택 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용</p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 마스크 적용 확인 (문서 바깥쪽 개체가 보이지 않아야 함)</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 동일한 방사형 그라디언트 납작하게 생성 후 세로로 배치 &rarr; 블렌드 모드: Screen 지정 <br>
+                <span class="text-sm text-krds-gray">* plus 기존 작업한 방사형 그라디언트 복사 사용 가능</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 크기와 각도를 다르게 부분적 배치 &rarr; 2000&times;500px 사각형 생성 후 하단 배치 &rarr; 방사형 그라디언트 개체들과 동시 선택 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 과정 4의 개체가 함께 선택되지 않도록 주의</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 마스크 적용 후 세로 방향 빛 효과 연출 확인 <br>
+                <span class="text-sm text-blue-600 font-bold">* Tip 강조 부위는 Opacity, 크기 등을 다르게 조절하여 활용 가능</span></p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 3. 빛 작업하기-2</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; 새 '배경-빛' 레이어 생성 &rarr; '배경' 레이어 위로 이동 및 나머지 잠금 &rarr; 크기 다른 원 2개 그리기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 큰 원 선택 &rarr; 방사형 그라디언트 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 큰 원 색 정보 (1번: #FFFFFF(0%), 2번: #7e00ff(12%), 3번: #020a01(72%), 4번: #000000(100%))</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 작은 원 선택 &rarr; 방사형 그라디언트 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 작은 원 색 정보 (1번: #FFFFFF(0%), 2번: #000000(100%), 그라디언트 슬라이더: 30%)</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 두 원 겹치기 &rarr; 가로로 크게 변형 후 배치</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> [Transparency] &rarr; 두 원 모두 블렌드 모드: Screen 지정 &rarr; 하단 큰 원 복사</p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 붙여넣기 후 더욱 납작한 형태로 화면을 벗어나도록 크게 가로 배치</p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 2000&times;1500px 사각형 생성 &rarr; 나머지 레이어 모두 잠금 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용</p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 4. 트로피컬 개체 작업하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; 최상단 '트로피컬' 레이어 생성 및 나머지 잠금 &rarr; [File]-[Open] &rarr; 'Style_16_1_elements.ai' 파일 열기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 나뭇잎 복사 후 화면 상단에 겹치지 않게 배치 &rarr; [Transparency] &rarr; 모든 개체 블렌드 모드: Multiply <br>
+                <span class="text-sm text-krds-gray">* plus Multiply 적용 시 배경에 투과되어 그림자처럼 어두워짐. 여기까지 'Style16_1_Retro_course1.ai'로 저장됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 2000&times;1500px 사각형 생성 &rarr; 전체 선택 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용 &rarr; 새 '트로피컬 2' 레이어 생성 및 나머지 잠금</p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 정원 생성 &rarr; 검은색-흰색 방사형 그라디언트 적용</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 나뭇잎 개체 복사하여 원 위에 배치 &rarr; 뒤쪽 원 선택 후 블렌드 모드: Multiply 지정 &rarr; 그룹으로 묶기 <br>
+                <span class="text-sm text-krds-gray">* plus Multiply는 흰색을 투명 처리하여 검은색만 그림자처럼 남게 함</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 동일한 방법으로 다른 나뭇잎 다양한 크기로 작업 &rarr; 각각 그룹 묶기</p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> 크기와 각도 조합하여 좌측 하단 배치 <br>
+                <span class="text-sm text-krds-gray">* plus 레이아웃 고려하여 자유롭게 디자인</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>8.</strong> 네 모서리 부분에 나뭇잎, 꽃 조합하여 레이아웃 완성</p>
+                <p class="pt-3 border-t border-krds-border"><strong>9.</strong> 2000&times;1500px 사각형 생성 후 문서 중앙 정렬 &rarr; 전체 선택 &rarr; <kbd>Ctrl</kbd> + <kbd>7</kbd>로 클리핑 마스크 적용</p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 5. 전체적인 컬러 작업하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; 최상단 '컬러' 레이어 생성 및 나머지 잠금 &rarr; 2000&times;1500px 사각형 생성 및 가운데 정렬</p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 선형 그라디언트(130도) 적용 &rarr; [Transparency] &rarr; 블렌드 모드: Color 지정 <br>
+                <span class="text-sm text-krds-gray">* plus 선형 색 정보 (1번: #dd00fe(0%), 2번: #ff00ff(25%), 3번: #0000ff(75%), 4번: #0000ff(100%))</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 적당한 원 생성 &rarr; 방사형 그라디언트 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 방사형 색 정보 (1번: #ffffff(0%), 2번: #000000(100%), 슬라이더: 35%)</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 큰 타원 형태로 변형 &rarr; 배경 개체와 함께 선택 &rarr; [Transparency] &rarr; Make Mask 버튼 클릭 &rarr; Clip 체크 해제</p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 강한 빛 마스크 가림 효과 확인 <br>
+                <span class="text-sm text-krds-gray">* plus 여기까지 'Style16_1_Retro_course2.ai'로 저장됨</span></p>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 6. 텍스트 작업하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base mb-6">
+                <p><strong>1.</strong> [Layers] &rarr; 최상단 '텍스트' 레이어 생성 및 나머지 잠금 &rarr; 흰색으로 'RETRO' 입력 <br>
+                <span class="text-sm text-krds-gray">* plus 예제 폰트: 'Black Han Sans', 300pt</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 텍스트 선택 &rarr; [Appearance] 열기 &rarr; 하단 Add New Fill 2번 눌러 면 2개 생성 &rarr; 아래쪽 Fill 색상: #ffc0e9</p>
+                <p class="pt-3 border-t border-krds-border"><strong>3.</strong> 분홍색 'Fill' 선택 &rarr; [fx]-[Distort & Transform]-[Transform] &rarr; 가로/세로: -5px &rarr; [OK] (좌측 상단 이동) <br>
+                <span class="text-sm text-blue-600 font-bold">* Tip 작업 도중 빈 화면을 클릭하면 선택이 해제되므로 빈 화면 클릭 주의</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>4.</strong> 새 Fill 생성 및 맨 아래 이동 &rarr; 그라디언트 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 그라디언트 색 (1번: #fbf37c, 2번: #ff7e86, 3번: #a08df0, 4번: #42c8f4, 5번: #40e5f5, 6번: #69fb78)</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>5.</strong> 그라디언트 'Fill' 선택 &rarr; [fx]-[Distort & Transform]-[Transform] &rarr; 가로/세로: 5px &rarr; [OK] (우측 하단 이동)</p>
+                <p class="pt-3 border-t border-krds-border"><strong>6.</strong> 하단 새 Fill(흰색) 생성 &rarr; [fx]-[Path]-[Offset Path] &rarr; 5px, Joins: Round &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>7.</strong> <kbd>Alt</kbd> + 드래그하여 그라디언트 Fill 아래로 복사 &rarr; 기존 Transform 삭제 &rarr; Offset Path 누르고 10px 적용</p>
+                <p class="pt-3 border-t border-krds-border"><strong>8.</strong> <kbd>Alt</kbd> + 드래그하여 흰색 Fill 아래로 복사 &rarr; 기존 Offset Path 클릭 &rarr; 15px 수정 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>9.</strong> <kbd>Alt</kbd> + 드래그하여 흰색 Fill 아래로 복사 &rarr; 검은색 수정 &rarr; 기존 Offset Path 클릭 &rarr; 20px 수정 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>10.</strong> [fx]-[Distort & Transform]-[Transform] &rarr; 가로/세로: 5px &rarr; [OK] &rarr; 효과 목록에 Transform 추가됨 &rarr; Opacity 클릭하여 블렌드 모드: Overlay로 변경</p>
+                <p class="pt-3 border-t border-krds-border"><strong>11.</strong> 마지막 작업한 검은색 Fill 아래로 복사 &rarr; 흰색 변경 &rarr; Offset Path 25px 수정 &rarr; Transform 클릭 &rarr; 가로/세로: -5px 수정 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>12.</strong> <kbd>Alt</kbd> + 드래그하여 그라디언트 Fill 복사 &rarr; Offset Path 클릭하고 30px 수정 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>13.</strong> 새 면(흰색) 지정 및 하단 이동 &rarr; Offset Path 40px 수정 &rarr; Opacity 클릭하여 블렌드 모드: Overlay 변경</p>
+                <p class="pt-3 border-t border-krds-border"><strong>14.</strong> 새 면 생성 후 하단 배치 &rarr; 선형 그라디언트(90도) 적용 <br>
+                <span class="text-sm text-krds-gray">* plus 색 정보 (1번: #f72585(0%), 2번: #b5179e(18%), 3번: #7209b7(35%), 4번: #790be3(52%), 5번: #4361ee(70%), 6번: #4895ef(85%), 7번: #4cc9f0(100%))</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>15.</strong> [fx]-[Path]-[Offset Path] &rarr; 40px &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>16.</strong> [fx]-[Distort & Transform]-[Transform] &rarr; Scale 가로: 99.5%, 이동 세로: 2px, Copies: 12 &rarr; [OK]</p>
+                <p class="pt-3 border-t border-krds-border"><strong>17.</strong> 가로 값이 0.5%씩 점차 작아지면서 하단으로 2px씩 이동되어 12개가 복사되기 때문에 입체감을 줌</p>
+                <p class="pt-3 border-t border-krds-border"><strong>18.</strong> 맨 아래 새 면(#ff00ff) 생성 &rarr; Offset Path 60px, Joins: Round (외곽 부드럽게) &rarr; Opacity: 30% 설정</p>
+                <p class="pt-3 border-t border-krds-border"><strong>19.</strong> [fx]-[Blur]-[Gaussian Blur] &rarr; 30px &rarr; [OK]</p>
+
+                <div class="bg-red-50 p-4 rounded mt-4 border border-red-100">
+                    <strong class="text-red-600 block mb-2 flex items-center">✔ 픽셀 효과가 끊겨 보일 때 해결 방법</strong>
+                    <ul class="krds-list text-sm text-krds-dark space-y-1">
+                        <li>일러스트레이터의 'Photoshop Effects' 사용 시 일정 범위를 넘어가면 끊김 현상 발생</li>
+                        <li>메뉴 [Effect] - [Document Raster Effects Settings...]에서 크기 넓히기 (최대 720px) 또는 [Appearance] 패널에서 해당 명령 재실행으로 해결</li>
+                    </ul>
+                </div>
+
+                <p class="pt-3 border-t border-krds-border"><strong>20.</strong> [Appearance] 패널에서 면과 선을 아무것도 선택하지 않은 상태로 [fx]-[Warp]-[Arc] 클릭 &rarr; Bend 15% &rarr; [OK] <br>
+                <span class="text-sm text-krds-gray">* plus 단, 글씨 개체는 선택되어 있어야 함</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>21.</strong> 목록 가장 위에 'Warp:Arc'라고 뜨면서 'RETRO'에 효과 적용됨 <br>
+                <span class="text-sm text-blue-600 font-bold">* Tip 면이나 선을 따로 선택하지 않은 상태로 효과를 주면 모든 면/선 전체에 적용됨</span></p>
+
+                <div class="bg-red-50 p-4 rounded mt-4 border border-red-100">
+                    <strong class="text-red-600 block mb-2 flex items-center">✔ 텍스트 색상이 이상하게 보일 때</strong>
+                    <ul class="krds-list text-sm text-krds-dark space-y-1">
+                        <li>효과가 들어간 텍스트는 마우스 커서 위치에 반응함</li>
+                        <li>텍스트 위에 마우스가 있으면 패스 가이드 색으로 채워져 보이므로, 개체는 선택하되 마우스는 바깥쪽으로 둘 것</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 class="font-bold text-lg text-krds-primary mb-2 mt-6">Step 7. 그래픽 스타일로 등록하기</h4>
+            <div class="krds-box bg-white border border-krds-border space-y-4 text-krds-dark text-base">
+                <p class="text-sm text-krds-gray mb-2">* 그래픽 스타일은 Appearance 속성을 저장해 타 개체 적용 및 일관성 유지에 유용함</p>
+                <p class="pt-3 border-t border-krds-border"><strong>1.</strong> [Graphic Styles] (<kbd>Shift</kbd> + <kbd>F5</kbd>) 열기 &rarr; 개체 선택 후 [+] 버튼 클릭 또는 패널 내 드래그로 등록 <br>
+                <span class="text-sm text-krds-gray">* plus 여기까지 'Style16_1_Retro_course3.ai'로 저장됨</span></p>
+                <p class="pt-3 border-t border-krds-border"><strong>2.</strong> 기본 폰트로 "TEXT" 입력 &rarr; 등록한 그래픽 스타일 클릭하여 Appearance 자동 적용 테스트 후 삭제</p>
+
+                <div class="bg-gray-100 p-4 rounded mt-4">
+                    <strong class="text-blue-700 block mb-2">💡 ESSENTIAL THEORY: Graphic Styles</strong>
+                    <p class="text-sm text-krds-dark mb-2">버전 호환이나 환경 변화 시 파손되는 어피어런스 정보를 안전하게 보존·관리</p>
+                    <ul class="krds-list text-sm text-krds-dark space-y-1">
+                        <li><strong>레이어 패널 활용:</strong> 우측 효과 표시 원 (회색=적용, 투명=미적용)</li>
+                        <li><strong>효과 복제:</strong> 회색 원 <kbd>Alt</kbd> + 드래그하여 투명한 원에 드롭</li>
+                        <li><strong>효과 삭제:</strong> 회색 원 휴지통으로 드래그</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!-- ==========================================
              PART 4. 실무 디자인 가이드
@@ -1538,7 +1701,7 @@
         <h2 id="part4" class="krds-part-title">📝 PART 4. 실무/공모전 가이드</h2>
 
         <section class="krds-card">
-            <h2 class="krds-sec-title">11. 폰트(글꼴) 실무 사용 가이드</h2>
+            <h2 class="krds-sec-title">12. 폰트(글꼴) 실무 사용 가이드</h2>
 
             <h3 class="krds-sub-title mt-0">상업적 이용 가능한 무료 폰트</h3>
             <p class="text-krds-gray mb-4">상세페이지, 배너, 포트폴리오 등에는 반드시 상업적 무료 폰트를 사용하세요.</p>
@@ -1617,7 +1780,7 @@
         </section>
         
         <section class="krds-card mb-0">
-            <h2 class="krds-sec-title">12. 포트폴리오 및 공모전 가이드</h2>
+            <h2 class="krds-sec-title">13. 포트폴리오 및 공모전 가이드</h2>
 
             <div class="grid grid-cols-1 gap-6">
                 <!-- 프로세스 페이지 및 라우드 소싱 -->
